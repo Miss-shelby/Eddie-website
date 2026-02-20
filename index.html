@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mr. Edemakhiota | Building Legacy</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts: Playfair Display for Serif, Inter for Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Inter:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Inter:wght@300;400;500;600&family=Nunito+Sans:wght@400;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Optional: add your custom colors -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        nunito: ["Nunito Sans", 'sans-serif'],
+                        serif: ["Enikra", "serif"],
+                    },
+                    colors: {
+                        brand: {
+                            gold: '#B48B78',
+                            dark: '#050505',
+                            darkSecondary: "#0F0B08",
+                            lightDark: "#332D2B",
+                            secondary: "#E3C9AC",
+                            dark: "#0F0B08"
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<!-- min-h-screen mobile,sm:h-[120vh] min-h-[100svh] -->
+
+<body class="">
+    <div
+        class="hero-wrapper min-h-[100vh] relative sm:h-[calc(100vh+20rem)]  w-full bg-[url('./assets/hero-image.jpg')] bg-center    bg-cover md:bg-[center_5%] lg:h-[120vh] lg:pb-20 pb-6 sm:pb-0  ">
+        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-transparent z-0"></div>
+        <!-- <div class="hidden lg:block absolute inset-0 lg:bg-gradient-to-t lg:from-black/70 lg:via-black/50 lg:to-black/20"></div> -->
+        <!-- Header / Navigation -->
+        <header class="fixed top-0   w-full z-50 pt-4  backdrop-blur-md ">
+            <div class="lg:max-w-[1500px] mx-auto px-4 lg:px-8 w-full  flex justify-between items-center text-white">
+                <div class="flex items-center space-x-2 pointer-events-auto cursor-pointer">
+                    <img class="object-contain h-[25px] lg:h-auto" src="./assets/LOGO-02 1.png" alt="logo image" />
+                </div>
+                <div class="flex items-center space-x-14">
+                    <nav class="hidden text-white sm:flex items-center font-nunito space-x-12 pointer-events-auto">
+                        <a href="#"
+                            class="text-base active font-medium hover:text-white transition-colors relative group nav-link">
+                            Home
+                            <!-- <span class="absolute -bottom-1 left-1/2 w-0 group-hover:w-1/4 h-[2px] bg-[#B48B78] -translate-x-1/2 transition-all duration-300"></span> -->
+                            <span class="underline"></span>
+
+                        </a>
+                        <a href="#"
+                            class="text-base font-medium relative text-gray-400 hover:text-white transition-colors nav-link">About
+                            <span class="underline"></span>
+                        </a>
+                        <a href="#"
+                            class="text-base font-medium relative text-gray-400 hover:text-white transition-colors nav-link">Businesses
+                            <span class="underline"></span>
+                        </a>
+                    </nav>
+
+                    <div class="hidden sm:block">
+                        <button
+                            class="bg-brand-gold text-white font-nunito px-4 py-3 text-sm rounded-full flex items-center space-x-3 transition-all">
+                            <span>Partner with me</span>
+                            <div
+                                class="w-6 h-6 bg-white text-brand-dark p-1 rounded-full flex items-center justify-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <line x1="7" y1="17" x2="17" y2="7"></line>
+                                    <polyline points="7 7 17 7 17 17"></polyline>
+                                </svg>
+                            </div>
+                        </button>
+                    </div>
+                    <div class="block sm:hidden">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M3.59998 18C3.59998 17.3372 4.13723 16.8 4.79998 16.8H19.2C19.8627 16.8 20.4 17.3372 20.4 18C20.4 18.6628 19.8627 19.2 19.2 19.2H4.79998C4.13723 19.2 3.59998 18.6628 3.59998 18ZM3.59998 6C3.59998 5.33725 4.13723 4.8 4.79998 4.8H19.2C19.8627 4.8 20.4 5.33725 20.4 6C20.4 6.66274 19.8627 7.2 19.2 7.2H4.79998C4.13723 7.2 3.59998 6.66274 3.59998 6ZM3.59998 12C3.59998 11.3373 4.13723 10.8 4.79998 10.8H12C12.6627 10.8 13.2 11.3373 13.2 12C13.2 12.6628 12.6627 13.2 12 13.2H4.79998C4.13723 13.2 3.59998 12.6628 3.59998 12Z"
+                                fill="white" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- HERO SECTION -->
+        <section id=""
+            class="hero relative  h-[110vh]    w-full  lg:pb-[52px]   max-w-4xl lg:max-w-[1500px] px-4 lg:px-8 flex flex-col justify-end items-center mx-auto  ">
+
+            <h1 class="text-4xl z-10 md:text-7xl font-serif md:text-center text-left leading-tight  tracking-tight">
+                Building Legacy Through Business<span class="lg:block"> & Culture.</span></h1>
+            <!-- Bottom Stats / Categories -->
+            <div class=" w-full  lg:pt-[50px] text-white z-10">
+                <div class="flex  justify-between items-end space-y-8 md:space-y-0">
+
+                    <div class="flex flex-col space-y-1 group cursor-pointer">
+                        <p class="text-2xl font-semibold text-brand-secondary uppercase font-nunito ">#<span
+                                class="text-white">01</span></p>
+                        <h3
+                            class="text-base md:text-[28px] font-nunito pt-2 group-hover:text-brand-gold transition-colors duration-500">
+                            Fashion
+                        </h3>
+                    </div>
+
+                    <div class="">
+                        <img class="h-10 sm:h-auto" src="./assets/Line 2.png" alt="line" srcset="">
+                    </div>
+
+                    <div class="flex flex-col space-y-1 group cursor-pointer">
+                        <p class="text-2xl font-semibold text-brand-secondary uppercase font-nunito ">#<span
+                                class="text-white">02</span></p>
+                        <h3
+                            class="text-base md:text-[28px] font-nunito pt-2 group-hover:text-brand-gold transition-colors duration-500">
+                            Culture
+                        </h3>
+                    </div>
+
+                    <div class="">
+                        <img class="h-10 sm:h-auto" src="./assets/Line 2.png" alt="line" srcset="">
+                    </div>
+
+                    <div class="flex flex-col space-y-1 group cursor-pointer">
+                        <p class="text-2xl font-semibold text-brand-secondary uppercase font-nunito ">#<span
+                                class="text-white">03</span></p>
+                        <h3
+                            class="text-base md:text-[28px] font-nunito pt-2 group-hover:text-brand-gold transition-colors duration-500">
+                            Craft
+                        </h3>
+                    </div>
+
+                </div>
+                <div class="sm:hidden mt-6">
+                    <button
+                        class="bg-brand-gold text-white font-nunito px-4 py-3 text-sm rounded-full flex items-center space-x-3 transition-all">
+                        <span>Partner with me</span>
+                        <div class="w-6 h-6 bg-white text-brand-dark p-1 rounded-full flex items-center justify-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <line x1="7" y1="17" x2="17" y2="7"></line>
+                                <polyline points="7 7 17 7 17 17"></polyline>
+                            </svg>
+                        </div>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+    </div>
+    <section class="bg-white pt-[80px] lg:pt-[120px] lg:max-w-[1500px] lg:px-8 px-4 mx-auto w-full">
+        <div class="flex gap-6 justify-between w-full">
+            <div class="w-1/2 lg:w-full lg:max-w-full">
+                <p class="text-brand-gold font-semibold text-xs md:text-2xl font-nunito">The “Mr Edemakhiota” brand</p>
+                <p class="text-[22px] leading-[26px] md:text-5xl font-serif   text-brand-dark">Character shaped <span
+                        class="lg:block">
+                        before
+                        success
+                    </span></p>
+            </div>
+            <div class="w-1/2 lg:w-full lg:max-w-2xl">
+                <p class="text-brand-dark text-sm  md:text-2xl font-nunito">Mr. Edemakhiota is deeply rooted in his
+                    cultural heritage and driven by a desire to build a legacy defined by integrity, excellence, and
+                    impact.</p>
+
+            </div>
+        </div>
+        <div class="grid grid-cols-1 items-center justify-center md:grid-cols-3 lg:grid-cols-3 gap-5 pt-[30px]">
+            <div class="w-full">
+                <img class="w-full" src="./assets/Component 1 (2).png" alt="">
+            </div>
+            <div class="w-full">
+                <img class="w-full" src="./assets/Component 1 (3).png" alt="">
+            </div>
+            <div class="w-full">
+                <img class="w-full" src="./assets/Frame 18.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!-- FASHION SECTION -->
+    <section class="bg-white py-[80px]  lg:pt-[100px] lg:pb-[120px] overflow-hidden">
+        <div class="lg:max-w-[1500px] px-4 lg:px-8 mx-auto w-full">
+            <!-- Header Row mb-16 -->
+            <div class="flex justify-between items-start gap-8 ">
+                <div class="w-1/2 lg:w-full lg:max-w-full">
+                    <p class="text-brand-gold font-semibold text-xs md:text-2xl font-nunito">Fashion.
+                        Culture. Craft.</p>
+                    <h2 class="text-[22px] md:text-5xl font-serif text-brand-darkSecondary leading-[26px] md:max-w-xl">
+                        A Life Shaped by Expression, Heritage, and Skill.
+                    </h2>
+                </div>
+                <div class="w-1/2 lg:w-full lg:max-w-2xl">
+                    <p class="text-brand-darkSecondary text-sm  md:text-2xl font-nunito leading-relaxed">
+                        Mr Edemakhiota represents a balance of style, identity, and disciplined execution. From how he
+                        dresses, to what he stands for, to what he builds, every detail reflects intention. His personal
+                        brand is not performative — it is lived.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Carousel Area min-h-[400px] lg:min-h-[600px] -->
+            <div class="js-carousel relative flex items-center justify-center   lg:px-20 w-full">
+                <!-- Background Text -->
+                <div class="absolute inset-0 flex items-center justify-center overflow-hidden">
+                    <span class="fashion-bg-text font-serif ">Fashion</span>
+                </div>
+
+                <!-- Navigation Buttons -->
+                <div
+                    class="absolute inset-x-0 top-1/2 -translate-y-1/2 flex justify-between  md:px-10 items-center lg:px-20  z-20 pointer-events-none">
+                    <button
+                        class="carousel-btn inactive prev-btn  pointer-events-auto bg-white/80 backdrop-blur-sm group">
+                        <svg width="40" height="35" viewBox="0 0 40 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M19.2677 0.73224C18.2915 -0.24408 16.7085 -0.24408 15.7322 0.73224L0.732216 15.7322C-0.244102 16.7086 -0.244102 18.2915 0.732216 19.2678L15.7322 34.2678C16.7085 35.2441 18.2915 35.2441 19.2677 34.2678C20.244 33.2915 20.244 31.7086 19.2677 30.7322L8.53552 20H37.5C38.8807 20 40 18.8807 40 17.5C40 16.1193 38.8807 15 37.5 15H8.53552L19.2677 4.2678C20.244 3.29148 20.244 1.70856 19.2677 0.73224Z"
+                                fill="#332D2B" />
+                        </svg>
+
+
+                    </button>
+                    <button
+                        class="carousel-btn    inactive  next-btn pointer-events-auto bg-white/80 backdrop-blur-sm group">
+                        <svg width="40" height="35" viewBox="0 0 40 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M20.7323 0.73224C21.7085 -0.24408 23.2915 -0.24408 24.2678 0.73224L39.2678 15.7322C40.2441 16.7086 40.2441 18.2915 39.2678 19.2678L24.2678 34.2678C23.2915 35.2441 21.7085 35.2441 20.7323 34.2678C19.756 33.2915 19.756 31.7086 20.7323 30.7322L31.4645 20H2.50002C1.1193 20 0 18.8807 0 17.5C0 16.1193 1.1193 15 2.50002 15H31.4645L20.7323 4.2678C19.756 3.29148 19.756 1.70856 20.7323 0.73224Z"
+                                fill="#332D2B" />
+                        </svg>
+                    </button>
+                </div>
+
+                <!-- Product Image Carousel -->
+                <div class="fashion-image-container relative">
+                    <img src="./assets/brown-classic-loafers-with-tassels-stand-wooden-stand 1.png"
+                        alt="His Fashion - Slide 1"
+                        class="carousel-item active w-full max-h-[168px] md:max-h-full h-auto max-w-[500px]">
+                    <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=1000&auto=format&fit=crop"
+                        alt="His Fashion - Slide 2"
+                        class="carousel-item w-full max-h-[168px] md:max-h-full h-auto max-w-[500px]">
+                    <img src="https://images.unsplash.com/photo-1549298916-b41d501d3772?q=80&w=1000&auto=format&fit=crop"
+                        alt="His Fashion - Slide 3"
+                        class="carousel-item w-full max-h-[168px] md:max-h-full h-auto max-w-[500px]">
+                </div>
+            </div>
+
+            <!-- Footer Row -->
+            <div class="lg:max-w-6xl mx-auto text-center">
+                <h3 class="text-[22px] md:text-5xl font-serif text-[#0F0B08] font-normal mb-2 md:mb-4">His Fashion</h3>
+                <p class="text-brand-dark text-sm  md:text-2xl font-nunito leading-relaxed">
+                    Mr Edemakhiota's fashion sense is a reflection of confidence and self-awareness. His style is clean,
+                    expressive, and rooted in individuality — blending modern aesthetics with personal discipline. For
+                    him, fashion is not trend-driven; it is a statement of presence.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CHARACTER SECTION  -->
+    <section class="bg-[#59291D]">
+        <div class="lg:max-w-[1500px] md:max-w-4xl pt-4  md:py-3 lg:px-8 px-4 w-full mx-auto">
+            <div class="flex w-full gap-4 md:gap-0 justify-between ">
+                <div class="w-full flex flex-col md:pt-20">
+                    <p class="text-white font-semibold text-xs md:text-[26px] md:leading-relaxed font-nunito">About Mr
+                        Edemakhiota</p>
+                    <h3 class="text-[22px] pt-[10px] md:text-5xl font-serif text-white leading-[26px] ">Character shaped
+                        before success</h3>
+                    <div class="flex  mt-auto  md:hidden">
+                        <img class="  object-cover h-auto" src="./assets/characterImg.png" alt="">
+                    </div>
+                </div>
+                <div class="w-full hidden md:block mt-auto"><img class="  object-cover object-top"
+                        src="./assets/characterImg.png" alt=""></div>
+                <div class="w-full h-full self-start md:self-end md:pb-[55px] ">
+                    <p class="text-white text-sm md:text-2xl font-nunito">Born on October 16, 1994, Edwin is the first
+                        child of
+                        five siblings, born to the late Mr. and Mrs. Christopher Ekinodese Edemakhiota. He hails from
+                        Benin City, in Ovia North-East Local Government Area of Edo State, Nigeria. </p>
+                    <p class="text-white text-sm md:text-2xl font-nunito pt-5">From a young age, Edwin demonstrated
+                        leadership
+                        qualities, a strong work ethic, and a deep sense of responsibility. Traits shaped by family
+                        values and life experiences.</p>
+                    <p class="text-white text-sm md:text-2xl font-nunito cursor-pointer pt-5">Read More..</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resilience section  -->
+    <div class="bg-white pt-[80px]  lg:pt-[120px] ">
+        <div class="lg:max-w-[1500px] md:max-w-4xl w-full mx-auto px-4 lg:px-8">
+            <div class="flex gap-6 md:items-start justify-between w-full">
+                <div class="w-1/2 lg:w-full lg:max-w-full">
+                    <p class="text-brand-gold font-semibold text-xs md:text-2xl font-nunito">What defines me</p>
+                    <p class="text-[22px] pt-4 leading-[26px] md:text-5xl font-serif   text-brand-dark">Resilience
+                        Shaped
+                        <span class="lg:block">by Experience</span>
+                    </p>
+                </div>
+                <div class="w-1/2 lg:w-full lg:max-w-2xl">
+                    <p class="text-brand-dark text-sm  md:text-2xl font-nunito">Edwin Osagie Edemakhiota’s journey is
+                        defined by resilience, continuous learning, and visionary leadership. From an early age, life
+                        experiences and responsibility shaped his discipline, mindset, and approach to building lasting
+                        impact.</p>
+
+                </div>
+            </div>
+            <div class="flex flex-col lg:flex-row  items-center gap-6  md:gap-10 mt-6  md:mt-[30px] w-full">
+                <div class="w-full lg:w-full lg:max-w-lg ">
+                    <img class="object-cover  w-full" src="./assets/eddie-halfshot.png" alt="eddie-halfshot" />
+                </div>
+                <div class="   flex justify-center lg:max-w-xs  w-full ">
+                    <img src="./assets/badge.png" class="object-cover justify-center items-center  " alt="badge" />
+                </div>
+                <div class="flex flex-col lg:flex-row gap-6   w-full ">
+                    <div class="lg:w-full ">
+                        <p class="text-lg pt-4 leading-[26px] md:text-[28px] font-serif   text-[#0F0B08]">Resilience
+                            Through Setbacks</p>
+                        <p class="text-[#332D2B] text-sm pt-[10px]  md:text-xl font-nunito">Edwin Osagie Edemakhiota’s
+                            journey is
+                            Early challenges were not deterrents but defining moments. Each setback became a learning
+                            phase that strengthened judgment, discipline, and long-term vision. </p>
+                    </div>
+                    <div class="flex flex-col items-center justify-center">
+                        <div class="vertical-gradient-line "></div>
+                    </div>
+                    <div class="lg:w-full ">
+                        <p class="text-lg pt-4 leading-[26px] md:text-[28px] font-serif   text-[#0F0B08]">Purposeful
+                            Leadership</p>
+                        <p class="text-[#332D2B] text-sm pt-[10px]  md:text-xl font-nunito">Guided by responsibility,
+                            cultural values, and lived experience, Edwin leads with intention—focused on building
+                            systems, people, and impact that endure.</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ENTERPRICE SECTION  -->
+    <div class="bg-white pt-[80px] lg:pt-[120px] lg:max-w-[1500px] mx-auto w-full md:max-w-4xl px-4 lg:px-8">
+        <div class="flex gap-6 md:items-start justify-between w-full">
+            <div class="w-1/2 lg:w-full lg:max-w-full">
+                <p class="text-brand-gold font-semibold text-xs md:text-2xl font-nunito">Enterprises Built on Discipline
+                </p>
+                <p class="text-[22px] pt-4 leading-[26px] md:text-5xl lg:max-w-md font-serif   text-[#0F0B08]">Ventures
+                    Shaped by Experience, Structure, and Standards.</p>
+            </div>
+            <div class="w-1/2 lg:w-full lg:max-w-2xl">
+                <p class="text-[#0F0B08] text-sm  md:text-2xl font-nunito">Mr Edemakhiota’s businesses are a natural
+                    extension of his values—precision, consistency, and long-term thinking. Each venture is
+                    intentionally built to solve real problems, operate with structure, and deliver quality without
+                    compromise, reflecting the same principles that define him as a leader and entrepreneur.</p>
+
+            </div>
+        </div>
+        <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 md:gap-6 mt-6 md:mt-[30px] w-full items-center">
+            <div class="w-full col-span-2"><img src="./assets/barber.png" alt="" srcset=""></div>
+            <div class="flex mt-6 md:mt-0 w-full flex-col lg:col-span-1 md:col-span-2  gap-6">
+                <div class="w-full"><img class="w-full" src="./assets/hairdresser.png" alt="" srcset=""></div>
+                <div class="w-full"><img class="w-full" src="./assets/painter.png" alt="" srcset=""></div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- REVIEWS SECTION change all to only pt -->
+    <section class="bg-white py-[80px] lg:py-[120px] lg:max-w-[1500px] mx-auto w-full md:max-w-4xl px-4 lg:px-8">
+        <div class="flex gap-6 md:items-start justify-between w-full">
+            <div class="w-1/2 lg:w-full lg:max-w-full">
+                <p class="text-brand-gold font-semibold text-xs md:text-2xl font-nunito">Partner with Mr Edemakhiota</p>
+                <p class="text-[22px] pt-4 leading-[26px] md:text-5xl lg:max-w-md font-serif   text-[#0F0B08]">
+                    Partnership That Creates Impact</p>
+            </div>
+            <div class="w-1/2 lg:w-full lg:max-w-2xl">
+                <p class="text-[#0F0B08] text-sm  md:text-2xl font-nunito">Partnering with Edwin Osagie Edemakhiota
+                    goes beyond business transactions. It is a collaboration grounded in discipline, integrity, and a
+                    shared commitment to excellence.</p>
+
+            </div>
+        </div>
+        <div class="js-carousel relative w-full mt-10 md:mt-20">
+            <!-- Review Slides min-h-[300px] md:min-h-[400px] -->
+            <div class="relative ">
+                <!-- Slide 1 -->
+                <div class="carousel-item active absolute inset-0 transition-opacity duration-500">
+                    <div class=" flex items-center gap-3 md:gap-6 lg:gap-9 w-full justify-between h-full">
+                        <div class="relative">
+                            <img class="absolute -top-4 left-0" src="./assets/content.png" alt="" srcset="">
+                            <img src="./assets/reviewimage.png"
+                                class="h-[200px] object-cover rounded-lg sm:rounded-none sm:h-auto" alt="quote icon">
+
+                        </div>
+                        <div class="w-full ">
+                            <p class="text-[#332D2B] font-nunito text-sm md:text-2xl">
+                                “Mr Edemakhiota operates with clarity and discipline. Every interaction with him
+                                reflects structure, intentionality, and a deep respect for excellence."
+                            </p>
+                            <div class="flex flex-col items-center justify-center mt-4 lg:mt-[30px]">
+                                <div class="horizontal-gradient-line "></div>
+                            </div>
+                            <div class="flex w-full justify-between mt-4 lg:mt-[30px]">
+                                <div class="flex flex-col">
+                                    <p class="text-[#0F0B08] text-lg font-serif md:text-4xl">Aisha Bello</p>
+                                    <p class="text-[#332D2B] font-nunito text-sm md:text-2xl">Investment Analyst</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="carousel-item  absolute inset-0 transition-opacity duration-500">
+                    <div class=" flex items-center gap-3 md:gap-6 lg:gap-9 w-full justify-between h-full">
+                        <div class="relative">
+                            <img class="absolute -top-4 left-0" src="./assets/content.png" alt="" srcset="">
+                            <img src="./assets/reviewimage.png"
+                                class="h-[200px] object-cover rounded-lg sm:rounded-none sm:h-auto" alt="quote icon">
+
+                        </div>
+                        <div class="w-full ">
+                            <p class="text-[#332D2B] font-nunito text-sm md:text-2xl">
+                                “Mr Edemakhiota operates with clarity and discipline. Every interaction with him
+                                reflects structure, intentionality, and a deep respect for excellence."
+                            </p>
+                            <div class="flex flex-col items-center justify-center mt-4 lg:mt-[30px]">
+                                <div class="horizontal-gradient-line "></div>
+                            </div>
+                            <div class="flex w-full justify-between mt-4 lg:mt-[30px]">
+                                <div class="flex flex-col">
+                                    <p class="text-[#0F0B08] font-serif text-lg md:text-4xl">Ahmie Bello</p>
+                                    <p class="text-[#332D2B] font-nunito text-sm md:text-2xl">Investment Analyst</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Consolidated Navigation Buttons -->
+                <div class="flex review justify-end gap-6 ">
+                    <button
+                        class="carousel-btn prev-btn pointer-events-auto border-[#332D2B] rounded-full hover:bg-gray-100 transition-colors">
+                        <svg width="30" height="25" viewBox="0 0 40 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M19.2677 0.73224C18.2915 -0.24408 16.7085 -0.24408 15.7322 0.73224L0.732216 15.7322C-0.244102 16.7086 -0.244102 18.2915 0.732216 19.2678L15.7322 34.2678C16.7085 35.2441 18.2915 35.2441 19.2677 34.2678C20.244 33.2915 20.244 31.7086 19.2677 30.7322L8.53552 20H37.5C38.8807 20 40 18.8807 40 17.5C40 16.1193 38.8807 15 37.5 15H8.53552L19.2677 4.2678C20.244 3.29148 20.244 1.70856 19.2677 0.73224Z"
+                                fill="#332D2B" />
+                        </svg>
+                    </button>
+                    <button
+                        class="carousel-btn next-btn pointer-events-auto border-[#332D2B] rounded-full hover:bg-gray-100 transition-colors">
+                        <svg width="30" height="25" viewBox="0 0 40 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M20.7323 0.73224C21.7085 -0.24408 23.2915 -0.24408 24.2678 0.73224L39.2678 15.7322C40.2441 16.7086 40.2441 18.2915 39.2678 19.2678L24.2678 34.2678C23.2915 35.2441 21.7085 35.2441 20.7323 34.2678C19.756 33.2915 19.756 31.7086 20.7323 30.7322L31.4645 20H2.50002C1.1193 20 0 18.8807 0 17.5C0 16.1193 1.1193 15 2.50002 15H31.4645L20.7323 4.2678C19.756 3.29148 19.756 1.70856 20.7323 0.73224Z"
+                                fill="#332D2B" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+    </section>
+
+    
+    <!-- FOOTER SECTION --> 
+    <footer class=" lg:max-w-[1500px] px-4 lg:px-8 md:max-w-4xl mx-auto ">
+        <div class="w-full bg-[#59291D] text-white p-5 md:p-[30px] rounded-tl-[20px] rounded-tr-[20px] ">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 xl:gap-24 ">
+                <!-- Left Column -->
+                <div class="lg:col-span-4 flex flex-col space-y-[15px] md:space-y-8">
+                    <div class="flex items-start justify-between w-full md:flex-col">
+                        <div class="w-1/3 md:w-full">
+                            <img class="object-contain h-[30px]" src="./assets/LOGO-02 1 copy.png" alt="logo image" />
+                            <p class="text-white pt-[14px] font-extralight text-xs sm:text-sm md:text-xl font-nunito leading-relaxed max-w-sm">
+                                Edwin Osagie Edemakhiota is a Nigerian entrepreneur, software developer, and business executive whose journey is defined by resilience, continuous learning, and visionary leadership.
+                            </p>
+                        </div>
+                        <div class="w-1/2 md:hidden">
+                             <!-- Navigation Links -->
+                            <nav class="grid grid-cols-2 gap-4">
+                                <a href="#"
+                                    class="text-xs font-nunito hover:text-brand-gold transition-colors">Home</a>
+                                <a href="#"
+                                    class="text-xs font-nunito hover:text-brand-gold transition-colors">About</a>
+                                <a href="#"
+                                    class="text-xs font-nunito hover:text-brand-gold transition-colors">Businesses</a>
+                                <a href="#"
+                                    class="text-xs font-nunito hover:text-brand-gold transition-colors">Privacy</a>
+                                <a href="#"
+                                    class="text-xs font-nunito hover:text-brand-gold transition-colors">Terms of
+                                    Use</a>
+                                <a href="#"
+                                    class="text-xs font-nunito hover:text-brand-gold transition-colors">Contact</a>
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="pt-[30px]">
+                        <h3 class="font-serif text-sm sm:text-base md:text-2xl">Get in Touch</h3>
+                        <div class="flex space-x-10 mt-4">
+                            <!-- Social Icons -->
+                            <a href="#">
+                                <img class="h-8 w-8" src="./assets/facebook.png" alt="facebook" />
+                            </a>
+                            <a href="#"> <img class="h-8 w-8" src="./assets/instagram 1.png" alt="instagram" /> </a>
+                            <a href="#"> <img class="h-8 w-8" src="./assets/twitter 1.png" alt="twitter" /> </a>
+                            <a href="#"> <img class="h-8 w-8" src="./assets/linkedin 1.png" alt="linkedin" /> </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column -->
+                <div class="lg:col-span-8 grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8  pt-[30px]">
+                    <div class="md:col-span-2 ">
+                        <h3 class="font-serif text-sm  md:text-2xl">Partner With Me</h3>
+                        <p class="text-white pt-1 md:pt-4 font-light text-xs max-w-[250px] md:text-xl font-nunito lg:max-w-sm">Kindly use the account numbers below to partner with Mr Edemakhiota</p>
+                    </div>
+
+                    <!-- Account Name -->
+                    <div class="space-y-2">
+                        <label class="text-white md:text-xl font-semibold text-sm font-nunito">Account Name</label>
+                        <div class="relative group">
+                            <div id="copy-name"
+                                class="w-full bg-white font-medium text-sm text-brand-darkSecondary p-3 rounded-[10px] font-nunito md:text-xl pr-12">
+                                Edema Osagie Edwin
+                            </div>
+                            <button
+                                class="absolute right-4 top-1/2 -translate-y-1/2 text-brand-darkSecondary hover:text-brand-gold transition-colors js-copy-btn"
+                                data-target="copy-name">
+                               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M7 3C7 1.89542 7.89544 0.999992 9.00001 1L21 1.00009C22.1046 1.00009 23 1.89552 23 3.00009V15C23 16.1046 22.1046 17 21 17H20C19.4477 17 19 16.5523 19 16V8.50004C19 6.56705 17.433 5.00004 15.5 5.00004H8C7.44771 5.00004 7 4.55233 7 4.00004V3ZM1 9.00017C1 7.8956 1.89543 7.00017 3 7.00017L15 7.00019C16.1046 7.00019 17 7.89562 17 9.00019V21.0001C17 22.1047 16.1046 23.0001 15 23.0001H3C1.89543 23.0001 1 22.1047 1 21.0001V9.00017Z" fill="#0F0B08"/>
+                                </svg>
+    
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Bank Name -->
+                    <div class="space-y-2">
+                        <label class="text-white md:text-xl font-semibold text-sm font-nunito">Bank Name</label>
+                        <div class="relative group">
+                            <div id="copy-bank"
+                                class="w-full bg-white font-medium text-brand-darkSecondary p-3 rounded-[10px] font-nunito text-sm  md:text-xl pr-12">
+                                United Bank for Nigeria
+                            </div>
+                            <button
+                                class="absolute right-4 top-1/2 -translate-y-1/2 text-brand-darkSecondary hover:text-brand-gold transition-colors js-copy-btn"
+                                data-target="copy-bank">
+                               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M7 3C7 1.89542 7.89544 0.999992 9.00001 1L21 1.00009C22.1046 1.00009 23 1.89552 23 3.00009V15C23 16.1046 22.1046 17 21 17H20C19.4477 17 19 16.5523 19 16V8.50004C19 6.56705 17.433 5.00004 15.5 5.00004H8C7.44771 5.00004 7 4.55233 7 4.00004V3ZM1 9.00017C1 7.8956 1.89543 7.00017 3 7.00017L15 7.00019C16.1046 7.00019 17 7.89562 17 9.00019V21.0001C17 22.1047 16.1046 23.0001 15 23.0001H3C1.89543 23.0001 1 22.1047 1 21.0001V9.00017Z" fill="#0F0B08"/>
+                                </svg>
+
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Account Number -->
+                    <div class="md:col-span-2 space-y-2">
+                        <label class="text-white md:text-xl font-semibold text-sm font-nunito">Account Number</label>
+                        <div class="relative group">
+                            <div id="copy-number"
+                                class="w-full bg-white font-medium text-brand-darkSecondary p-3 rounded-[10px] font-nunito tex  md:text-xl pr-12">
+                                2064292100
+                            </div>
+                            <button
+                                class="absolute right-4 top-1/2 -translate-y-1/2 text-brand-darkSecondary hover:text-brand-gold transition-colors js-copy-btn"
+                                data-target="copy-number">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M7 3C7 1.89542 7.89544 0.999992 9.00001 1L21 1.00009C22.1046 1.00009 23 1.89552 23 3.00009V15C23 16.1046 22.1046 17 21 17H20C19.4477 17 19 16.5523 19 16V8.50004C19 6.56705 17.433 5.00004 15.5 5.00004H8C7.44771 5.00004 7 4.55233 7 4.00004V3ZM1 9.00017C1 7.8956 1.89543 7.00017 3 7.00017L15 7.00019C16.1046 7.00019 17 7.89562 17 9.00019V21.0001C17 22.1047 16.1046 23.0001 15 23.0001H3C1.89543 23.0001 1 22.1047 1 21.0001V9.00017Z" fill="#0F0B08"/>
+                                    </svg>
+
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Navigation Links -->
+                    <nav class="hidden md:flex md:col-span-2 pt-8 flex-wrap gap-8 md:gap-12">
+                        <a href="#"
+                            class="text-lg md:text-2xl font-nunito hover:text-brand-gold transition-colors">Home</a>
+                        <a href="#"
+                            class="text-lg md:text-2xl font-nunito hover:text-brand-gold transition-colors">About</a>
+                        <a href="#"
+                            class="text-lg md:text-2xl font-nunito hover:text-brand-gold transition-colors">Businesses</a>
+                        <a href="#"
+                            class="text-lg md:text-2xl font-nunito hover:text-brand-gold transition-colors">Privacy</a>
+                        <a href="#"
+                            class="text-lg md:text-2xl font-nunito hover:text-brand-gold transition-colors">Terms of
+                            Use</a>
+                        <a href="#"
+                            class="text-lg md:text-2xl font-nunito hover:text-brand-gold transition-colors">Contact</a>
+                    </nav>
+                </div>
+            </div>
+
+            <!-- Bottom Bar -->
+             <div class="w-full mt-10 hidden md:block">
+                <img src="./assets/footer-line.png" alt="footer-gradient-line" srcset="">
+            </div>
+            <div class=" mt-10 lg:mt-[30px] flex flex-col md:flex-row justify-between items-start md:items-center  font-nunito">
+                <div class="text-white text-xs md:text-xl">Fashion. Culture. Craft</div>
+                <div class="w-full my-4 md:hidden">
+                <img src="./assets/footer-line.png" alt="footer-gradient-line" srcset="">
+            </div>
+                <div class="flex items-center space-x-2">
+                    <span
+                        class="border border-white rounded-full w-5 h-5 flex items-center justify-center text-[10px]">C</span>
+                    <span class="text-white text-xs md:text-xl">Copyright. Mr Edemakhiota. All rights reserved</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+<script src="index.js"></script>
+</body>
+
+</html>

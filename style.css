@@ -1,0 +1,157 @@
+@font-face {
+  font-family: 'Enikra';
+  src: url('./assets/fonts/Enikra-DEMO-VERSION-BF695746c214da0.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.vertical-gradient-line {
+  border: 2px solid;
+  border-image-source: linear-gradient(180deg, rgba(255, 255, 255, 0) -4.79%, #000000 50.34%, rgba(255, 255, 255, 0) 105.48%);
+  border-image-slice: 1;
+  width: 0px;
+  height: 150px;
+}
+
+
+
+/* Custom refinements for Eddie Website Hero */
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Inter:wght@300;400;500;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* border: 1px solid pink; */
+}
+
+:root {
+  --brand-gold: #B48B78;
+  --brand-dark: #050505;
+}
+
+/* HERO SECTION STYLING  */
+.hero-wrapper {
+  /* background: linear-gradient(180deg, rgba(0, 0, 0, 1), rgba(0, 0, 0, 1));  */
+  color: white;
+  /* position: relative;   */
+}
+
+.nav-link .underline {
+  position: absolute;
+  bottom: -4px;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background-color: #B48B78;
+  transform: translateX(-50%);
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover .underline,
+.nav-link.active .underline {
+  width: 25%;
+}
+
+/* FASHION SECTION */
+.fashion-bg-text {
+  font-size: clamp(6rem, 15vw, 18rem);
+  color: rgba(0, 0, 0, 0.05);
+  /* Very light opacity */
+  pointer-events: none;
+  z-index: 0;
+  font-family: 'Playfair Display', serif;
+  letter-spacing: -0.02em;
+}
+
+.carousel-btn {
+  width: 80px;
+  height: 50px;
+  border: 1px solid #332D2B;
+  border-radius: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+.review .carousel-btn{ 
+  width: 65px;
+  height: 37px;
+}
+.carousel-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.carousel-btn:hover:not(:disabled) {
+  background-color: #f9fafb;
+  border-color: #d1d5db;
+}
+
+.fashion-image-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 500px;
+  /* min-height: 500px; */
+}
+
+.carousel-item {
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.6s ease, visibility 0.6s ease;
+  z-index: 10;
+  filter: drop-shadow(0 20px 30px rgba(0, 0, 0, 0.1));
+}
+
+.carousel-item.active {
+  position: relative;
+  opacity: 1;
+  visibility: visible;
+}
+
+.fashion-image-container .carousel-item {
+  max-height: 500px;
+  object-fit: contain;
+}
+.horizontal-gradient-line{
+  border: 1px solid;
+    width: 90%;
+    height: 0px;
+    border-image-source: linear-gradient(90deg, rgba(255, 255, 255, 0) -4.79%, #000000 50.34%, rgba(255, 255, 255, 0) 105.48%);
+    border-image-slice: 1;
+}
+@media (max-width: 768px) {
+  .fashion-image-container .carousel-item {
+    max-height: 300px;
+  }
+
+  .carousel-btn {
+    width: 60px;
+    height: 30px;
+
+  }
+
+  .carousel-btn svg {
+    width: 20px;
+    height: 20px;
+  }
+  .review .carousel-btn{ 
+    width: 45px;
+    height: 27px;
+}
+}
+
+@media (max-width: 1024px) {
+  .vertical-gradient-line {
+    border: 1px solid;
+    width: 80%;
+    height: 0px;
+    border-image-source: linear-gradient(90deg, rgba(255, 255, 255, 0) -4.79%, #000000 50.34%, rgba(255, 255, 255, 0) 105.48%);
+    border-image-slice: 1;
+  }
+}
