@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mr. Edemakhiota |About</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts: Playfair Display for Serif, Inter for Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Inter:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Inter:wght@300;400;500;600&family=Nunito+Sans:wght@400;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Optional: add your custom colors -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        nunito: ["Nunito Sans", 'sans-serif'],
+                        serif: ["Enikra", "serif"],
+                    },
+                    colors: {
+                        brand: {
+                            gold: '#B48B78',
+                            dark: '#050505',
+                            darkSecondary: "#0F0B08",
+                            lightDark: "#332D2B",
+                            secondary: "#E3C9AC",
+                            dark: "#0F0B08"
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<!-- min-h-screen mobile,sm:h-[120vh] min-h-[100svh] -->
+
+<body class=""> 
+    <div
+        class="hero-wrapper min-h-[110vh] relative sm:h-[180vh]  w-full bg-[url('./assets/about-hero.png')]
+         bg-[center]    bg-cover md:bg-[center_top_1%] lg:bg-[center_1%] lg:h-[145vh] lg:pb-20 pb-6 sm:pb-0  ">
+        <div class="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent z-0"></div>
+        <!-- <div class="hidden lg:block absolute inset-0 lg:bg-gradient-to-t lg:from-black/70 lg:via-black/50 lg:to-black/20"></div> -->
+        <!-- Header / Navigation  add later backdrop-blur-md -->
+        <header class="fixed top-0 mb-10  w-full z-50 pt-4  ">
+            <div class="lg:max-w-[1500px] mx-auto px-4 lg:px-8 w-full  flex justify-between items-center text-white">
+                <div class="flex items-center space-x-2 pointer-events-auto cursor-pointer">
+                    <img class="object-contain h-[25px] lg:h-auto" src="./assets/LOGO-02 1.png" alt="logo image" />
+                </div>
+                <div class="flex items-center space-x-14">
+                    <nav class="hidden text-white sm:flex items-center font-nunito space-x-12 pointer-events-auto">
+                        <a href="index.html"
+                            class="text-base font-medium text-white hover:text-white transition-colors relative group nav-link">
+                            Home
+                            <span class="underline"></span>
+                        </a>
+                        <a href="about.html"
+                            class="text-base font-medium relative text-gray-400 hover:text-white transition-colors nav-link">About
+                            <span class="underline"></span>
+                        </a>
+                        <a href="#"
+                            class="text-base font-medium relative text-gray-400 hover:text-white transition-colors nav-link">Businesses
+                            <span class="underline"></span>
+                        </a>
+                    </nav>
+
+                    <div class="hidden sm:block">
+                        <button
+                            class="bg-brand-gold text-white font-nunito px-4 py-3 text-sm rounded-full flex items-center space-x-3 transition-all">
+                            <span>Partner with me</span>
+                            <div
+                                class="w-6 h-6 bg-white text-brand-dark p-1 rounded-full flex items-center justify-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <line x1="7" y1="17" x2="17" y2="7"></line>
+                                    <polyline points="7 7 17 7 17 17"></polyline>
+                                </svg>
+                            </div>
+                        </button>
+                    </div>
+                    <div class="block sm:hidden">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M3.59998 18C3.59998 17.3372 4.13723 16.8 4.79998 16.8H19.2C19.8627 16.8 20.4 17.3372 20.4 18C20.4 18.6628 19.8627 19.2 19.2 19.2H4.79998C4.13723 19.2 3.59998 18.6628 3.59998 18ZM3.59998 6C3.59998 5.33725 4.13723 4.8 4.79998 4.8H19.2C19.8627 4.8 20.4 5.33725 20.4 6C20.4 6.66274 19.8627 7.2 19.2 7.2H4.79998C4.13723 7.2 3.59998 6.66274 3.59998 6ZM3.59998 12C3.59998 11.3373 4.13723 10.8 4.79998 10.8H12C12.6627 10.8 13.2 11.3373 13.2 12C13.2 12.6628 12.6627 13.2 12 13.2H4.79998C4.13723 13.2 3.59998 12.6628 3.59998 12Z"
+                                fill="white" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- HERO SECTION -->
+        <section id=""
+            class="hero relative h-[140vh] sm:h-[180vh] lg:h-[145vh] w-full  lg:pb-[52px]   max-w-4xl lg:max-w-[1500px] px-4 lg:px-8    mx-auto  flex flex-col items-end justify-end lg:flex-row lg:justify-normal lg:items-stretch">
+            <div class="flex flex-col lg:mt-40 lg:max-w-xl">
+                <p class="text-[#E3C9AC] font-semibold text-xs md:text-2xl font-nunito">About</p>
+                <h2
+                    class="text-4xl text-left  z-10 md:text-[70px] font-serif xl:text-left   leading-[1.2]  tracking-tight">
+                    Edwin Osagie <span class="lg:block">Edemakhiota</span></h2>
+                <p
+                    class="text-white text-sm  md:text-[22px] font-nunito group-hover:text-brand-gold transition-colors duration-500 leading-[1.5]">
+                    Mr Edemakhiota is a Nigerian entrepreneur, software developer, and business executive whose journey
+                    is defined by resilience, continuous learning, and visionary leadership. Widely known through the
+                    personal brand “Mr Edemakhiota,” he represents excellence, discipline, and purposeful enterprise
+                    across multiple industries.</p>
+            </div>
+
+
+            <!-- right end -->
+            <div class=" w-full flex mt-6    flex-col lg:flex-row   z-10">
+                <div class="flex flex-col justify-start items-start lg:justify-end lg:items-end w-full ">
+                    <p
+                        class="text-white text-sm md:text-[22px] lg:max-w-xl  font-nunito group-hover:text-brand-gold transition-colors duration-500 leading-[1.5]">
+                        Mr Edemakhiota is a Nigerian entrepreneur, software developer, and business executive whose
+                        journey is defined by re silience, continuous learning, and visionary leadership. Widely known
+                        through the personal brand “Mr Edemakhiota,” he represents excellence, discipline, and
+                        purposeful enterprise across multiple industries.</p>
+                </div>
+                <div class="lg:hidden mt-6">
+                    <button
+                        class="bg-brand-gold text-white font-nunito px-4 py-3 text-sm rounded-full flex items-center space-x-3 transition-all">
+                        <span>Partner with me</span>
+                        <div class="w-6 h-6 bg-white text-brand-dark p-1 rounded-full flex items-center justify-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <line x1="7" y1="17" x2="17" y2="7"></line>
+                                <polyline points="7 7 17 7 17 17"></polyline>
+                            </svg>
+                        </div>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+    </div>
+    <!-- hero secrion -->
+    <section class="bg-white pt-[80px] lg:pt-[100px] lg:max-w-[1500px] lg:px-8 px-4 mx-auto w-full">
+        <div class="flex flex-col lg:flex-row gap-6 xl:gap-10 items-stretch justify-between w-full">
+            <div class=" w-full">
+                <p class="text-[22px]  md:text-[70px] font-serif leading-[1.1]  tracking-tight  text-brand-dark">Education and Early Development </p>
+                 <p class="text-brand-dark text-sm  md:text-2xl font-nunito pt-6">Mr. Edemakhiota is deeply rooted in his
+                    Edwin began his formal education at Zion International School, Onitsha, where he completed his primary education. In 2005/2006, he enrolled at Mater Christi Secondary School, Iba Pope Awada, Onitsha, where he completed his secondary education in 2011.
+                    </p>
+                    <p class="text-brand-dark text-sm  md:text-2xl font-nunito pt-6">During his formative years, Edwin showed a natural inclination toward business, creativity, and problem-solving. These early traits laid the foundation for his entrepreneurial mindset and his determination to build sustainable ventures.</p>
+            </div>
+            <div class="w-full">
+               <img class="object-cover xl:max-h-[500px] xl:h-fit h-full w-full rounded-3xl" src="./assets/Group 6.png" alt="youth-image"/>
+            </div>
+        </div>
+        <div class="w-full justify-center items-center mt-[80px] lg:mt-[100px]">
+            <img src="./assets/Line 3.png" alt="gradient line" srcset="">
+        </div>
+    </section>
+
+    <!-- EARLY ENTREPRENEURSHIP AND SETBACKS SECTION -->
+  <section class="bg-white pt-[80px] lg:pt-[100px] lg:max-w-[1500px] lg:px-8 px-4 mx-auto w-full">
+        <div class="flex flex-col-reverse lg:flex-row gap-6 xl:gap-10 items-stretch justify-between w-full">
+             <div class="w-full"> 
+               <img class="object-cover xl:max-h-[640px] xl:h-fit h-full w-full rounded-3xl" src="./assets/Group 7.png" alt="youth-image"/>
+            </div>
+            <div class=" w-full">
+                <p class="text-[22px]  md:text-[70px] font-serif leading-[1.1]  tracking-tight  text-brand-dark">Early Entrepreneurship and Setbacks </p>
+                 <p class="text-brand-dark text-sm  md:text-2xl font-nunito pt-6">Mr. Edemakhiota is deeply rooted in his
+                    At just 16–17 years old (2010–2011), Edwin launched his first business venture, marking the beginning of his entrepreneurial journey. Driven by passion and ambition, he opened a salon business, gaining early exposure to customer service, business operations, and financial responsibility.
+                    </p>
+                    <p class="text-brand-dark text-sm  md:text-2xl font-nunito pt-6">Despite its initial promise, the business faced challenges and ultimately closed in 2015. Rather than being discouraged, Edwin viewed this experience as a critical learning phase—one that strengthened his resilience, sharpened his judgment, and prepared him for greater opportunities.</p>
+            </div> 
+        </div>
+        <div class="w-full justify-center items-center mt-[80px] lg:mt-[100px]">
+            <img src="./assets/Line 3.png" alt="gradient line" srcset="">
+        </div>
+    </section>
+
+    <!-- BETTIG AND BUSINESS SECTION  -->
+    <section class="bg-white pt-[80px] lg:pt-[100px] lg:max-w-[1500px] lg:px-8 px-4 mx-auto w-full">
+        <div class="flex flex-col lg:flex-row gap-6 xl:gap-10 items-stretch justify-between w-full">
+            <div class=" w-full">
+                <p class="text-[22px]  md:text-[70px] font-serif leading-[1.1]  tracking-tight  text-brand-dark">Relocation, <span class="lg:block">Corporate</span> Experience, and Betting Business </p>
+                 <p class="text-brand-dark text-sm  md:text-2xl font-nunito pt-6">Following this setback, Edwin relocated to Benue State, where he strategically repositioned himself for growth. He joined KC Gaming Network, a betting and gaming company, where he worked within a structured business environment. This role enhanced his understanding of operations, customer relations, compliance, and daily business management.
+                    </p>
+                    <p class="text-brand-dark text-sm  md:text-2xl font-nunito pt-6">Building on this experience, Edwin took a decisive entrepreneurial leap. In November 2016, he opened his own betting shop and became one of the stakeholders in the business. This milestone marked a successful comeback and reinforced his reputation as a determined and adaptable entrepreneur.</p>
+            </div>
+            <div class="w-full">
+               <img class="object-cover xl:max-h-[750px] xl:h-fit h-full w-full rounded-3xl" src="./assets/Group 8.png" alt="gadget"/>
+            </div>
+        </div>
+        <div class="w-full justify-center items-center mt-[80px] lg:mt-[100px]">
+            <img src="./assets/Line 3.png" alt="gradient line" srcset="">
+        </div>
+    </section>
+
+
+ <!-- BARBER SECTION  -->
+ <section class="bg-white pt-[80px] lg:pt-[100px] lg:max-w-[1500px] lg:px-8 px-4 mx-auto w-full">
+        <div class="flex flex-col-reverse lg:flex-row gap-6 xl:gap-10 items-stretch justify-between w-full">
+             <div class="w-full"> 
+               <img class="object-cover xl:max-h-[570px] xl:h-fit h-full w-full rounded-3xl" src="./assets/Group 9.png" alt="barber-image"/>
+            </div>
+            <div class=" w-full">
+                <p class="text-[22px]  md:text-[70px] font-serif leading-[1.1]  tracking-tight  text-brand-dark">The Birth of <span class="lg:block">Mastercutz</span>  Barbershop </p>
+                 <p class="text-brand-dark text-sm  md:text-2xl font-nunito pt-6">With renewed clarity and industry experience, Edwin returned to the grooming industry with a refined vision. On October 3, 2021, he officially founded Mastercutz Barbershop, a brand built on professionalism, premium service delivery, and strong operational standards.
+                    </p>
+                    <p class="text-brand-dark text-sm  md:text-2xl font-nunito pt-6">Mastercutz Barbershop quickly evolved into a trusted name in personal grooming, expanding its footprint and establishing operational locations in Awka and Abuja. The brand became the cornerstone of a growing business ecosystem.</p>
+            </div> 
+        </div>
+        <div class="w-full justify-center items-center mt-[80px] lg:mt-[100px]">
+            <img src="./assets/Line 3.png" alt="gradient line" srcset="">
+        </div>
+    </section>
+
+<!-- PROFESSIONAL TRAINING  -->
+  <section class="bg-white pt-[80px] lg:pt-[100px] lg:max-w-[1500px] lg:px-8 px-4 mx-auto w-full">
+        <div class="flex  flex-col lg:flex-row gap-6 xl:gap-10 items-stretch justify-between w-full">
+            <div class=" w-full">
+                <p class="text-[22px]  md:text-[70px] font-serif leading-[1.1]  tracking-tight  text-brand-dark">Professional   <span class="lg:block">Training and</span> Expansion into Cleaning Services </p>
+                 <p class="text-brand-dark text-sm  md:text-2xl font-nunito pt-6">Committed to excellence and structured growth, Edwin pursued formal professional training in the cleaning industry. He attended Chi Kleen Cleaning Services Academy, where he received hands-on training in the ethics, standards, and operational systems of professional cleaning and laundry services.
+                    </p>
+                    <p class="text-brand-dark text-sm  md:text-2xl font-nunito pt-6">Armed with industry knowledge and best practices, Edwin launched Master Laundry and Cleaning Services in 2023, offering reliable, hygienic, and professionally managed laundry and cleaning solutions. The brand operates under the same values of quality, consistency, and customer satisfaction that define the Mastercutz ecosystem.</p>
+            </div>
+            <div class="w-full">
+               <img class="object-cover xl:max-h-[710px] xl:h-fit h-full w-full rounded-3xl" src="./assets/Group 10 (1).png" alt="painter"/>
+            </div>
+        </div>
+        <div class="w-full justify-center items-center mt-[80px] lg:mt-[100px]">
+            <img src="./assets/Line 3.png" alt="gradient line" srcset="">
+        </div>
+    </section>
+
+    <!-- EMPIRE SECTION  -->
+    <section class="bg-white pt-[80px] lg:pt-[100px] lg:max-w-[1500px] lg:px-8 px-4 mx-auto w-full">
+        <div class="flex flex-col-reverse  lg:flex-row gap-6 xl:gap-10 items-stretch justify-between w-full">
+             <div class="w-full"> 
+               <img class="object-cover xl:max-h-[590px] xl:h-fit h-full w-full rounded-3xl" src="./assets/Group 10 (1).png" alt="barber-image"/>
+            </div>
+            <div class=" w-full">
+                <p class="text-[22px]  md:text-[70px] font-serif leading-[1.1]  tracking-tight  text-brand-dark">Mastercutz Empire  <span class="lg:block">Limited and</span>  Technology </p>
+                 <p class="text-brand-dark text-sm  md:text-2xl font-nunito pt-6">Edwin is the Founder and Chief Executive Officer of Mastercutz Empire Limited, the parent company overseeing:
+                    </p>
+                    <ul class="list-disc ml-6">
+                        <li class="text-brand-dark text-sm  md:text-2xl font-nunito pt-6">	Mastercutz Barbershop & Spa</li>
+                        <li class="text-brand-dark text-sm  md:text-2xl font-nunito ">		Master Laundry and Cleaning Services</li>
+                       
+                    </ul>
+                    <p class="text-brand-dark text-sm  md:text-2xl font-nunito pt-6">Beyond entrepreneurship, Edwin is also a software developer, leveraging technology to build scalable systems, digital platforms, and efficient business processes. His ability to merge technology with practical business experience positions him uniquely as a modern, innovation-driven entrepreneur.</p>
+            </div> 
+        </div>
+        <div class="w-full justify-center items-center mt-[80px] lg:mt-[100px]">
+            <img src="./assets/Line 3.png" alt="gradient line" srcset="">
+        </div>
+    </section>
+
+    <!-- PERSONAL LIFE  -->
+  <section class="bg-white pt-[80px] lg:pt-[100px] lg:max-w-[1500px] lg:px-8 px-4 mx-auto w-full">
+        <div class="flex  flex-col lg:flex-row gap-6 xl:gap-10 lg:items-center justify-between w-full">
+            <div class=" w-full">
+                <p class="text-[22px]  md:text-[70px] font-serif leading-[1.1]  tracking-tight  text-brand-dark">Personal Life and Philosophy  </p>
+                 <p class="text-brand-dark text-sm  md:text-2xl font-nunito pt-6">Edwin Osagie Edemakhiota is a husband, a disciplined businessman, and a lifelong learner. He is deeply rooted in his cultural heritage and driven by a desire to build a legacy defined by integrity, excellence, and impact.
+                    </p>
+                    <p class="text-brand-dark text-sm  md:text-2xl font-nunito pt-6">Mr Edemakhiota’s lifelong philosophy is that structure precedes scale. Systems create freedom. Discipline compounds and growth with foundation is temporary.</p>
+            </div>
+            <div class="w-full">
+               <img class="object-cover xl:max-h-[480px] xl:h-fit h-full w-full rounded-3xl" src="./assets/Group 11.png" alt="painter"/>
+            </div>
+        </div>
+        <div class="w-full justify-center items-center mt-[80px] lg:mt-[100px]">
+            <img src="./assets/Line 3.png" alt="gradient line" srcset="">
+        </div>
+    </section>
+   
+   
+
+
+    <!-- FOOTER SECTION -->
+    <footer class=" lg:max-w-[1500px] px-4 lg:px-8 md:max-w-4xl mx-auto ">
+        <div class="w-full bg-[#59291D] text-white p-5 md:p-[30px] rounded-tl-[20px] rounded-tr-[20px] ">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 xl:gap-24 ">
+                <!-- Left Column -->
+                <div class="lg:col-span-4 flex flex-col space-y-[15px] md:space-y-8">
+                    <div class="flex items-start justify-between w-full md:flex-col">
+                        <div class="w-1/3 md:w-full">
+                            <img class="object-contain h-[30px]" src="./assets/LOGO-02 1 copy.png" alt="logo image" />
+                            <p
+                                class="text-white pt-[14px] font-extralight text-xs sm:text-sm md:text-xl font-nunito leading-relaxed max-w-sm">
+                                Edwin Osagie Edemakhiota is a Nigerian entrepreneur, software developer, and business
+                                executive whose journey is defined by resilience, continuous learning, and visionary
+                                leadership.
+                            </p>
+                        </div>
+                        <div class="w-1/2 md:hidden">
+                            <!-- Navigation Links -->
+                            <nav class="grid grid-cols-2 gap-4">
+                                <a href="index.html"
+                                    class="text-xs font-nunito hover:text-brand-gold transition-colors">Home</a>
+                                <a href="about.html"
+                                    class="text-xs font-nunito hover:text-brand-gold transition-colors">About</a>
+                                <a href="#"
+                                    class="text-xs font-nunito hover:text-brand-gold transition-colors">Businesses</a>
+                                <a href="#"
+                                    class="text-xs font-nunito hover:text-brand-gold transition-colors">Privacy</a>
+                                <a href="#" class="text-xs font-nunito hover:text-brand-gold transition-colors">Terms of
+                                    Use</a>
+                                <a href="#"
+                                    class="text-xs font-nunito hover:text-brand-gold transition-colors">Contact</a>
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="pt-[30px]">
+                        <h3 class="font-serif text-sm sm:text-base md:text-2xl">Get in Touch</h3>
+                        <div class="flex space-x-10 mt-4">
+                            <!-- Social Icons -->
+                            <a href="#">
+                                <img class="h-8 w-8" src="./assets/facebook.png" alt="facebook" />
+                            </a>
+                            <a href="#"> <img class="h-8 w-8" src="./assets/instagram 1.png" alt="instagram" /> </a>
+                            <a href="#"> <img class="h-8 w-8" src="./assets/twitter 1.png" alt="twitter" /> </a>
+                            <a href="#"> <img class="h-8 w-8" src="./assets/linkedin 1.png" alt="linkedin" /> </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column -->
+                <div class="lg:col-span-8 grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8  pt-[30px]">
+                    <div class="md:col-span-2 ">
+                        <h3 class="font-serif text-sm  md:text-2xl">Partner With Me</h3>
+                        <p
+                            class="text-white pt-1 md:pt-4 font-light text-xs max-w-[250px] md:text-xl font-nunito lg:max-w-sm">
+                            Kindly use the account numbers below to partner with Mr Edemakhiota</p>
+                    </div>
+
+                    <!-- Account Name -->
+                    <div class="space-y-2">
+                        <label class="text-white md:text-xl font-semibold text-sm font-nunito">Account Name</label>
+                        <div class="relative group">
+                            <div id="copy-name"
+                                class="w-full bg-white font-medium text-sm text-brand-darkSecondary p-3 rounded-[10px] font-nunito md:text-xl pr-12">
+                                Edema Osagie Edwin
+                            </div>
+                            <button
+                                class="absolute right-4 top-1/2 -translate-y-1/2 text-brand-darkSecondary hover:text-brand-gold transition-colors js-copy-btn"
+                                data-target="copy-name">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M7 3C7 1.89542 7.89544 0.999992 9.00001 1L21 1.00009C22.1046 1.00009 23 1.89552 23 3.00009V15C23 16.1046 22.1046 17 21 17H20C19.4477 17 19 16.5523 19 16V8.50004C19 6.56705 17.433 5.00004 15.5 5.00004H8C7.44771 5.00004 7 4.55233 7 4.00004V3ZM1 9.00017C1 7.8956 1.89543 7.00017 3 7.00017L15 7.00019C16.1046 7.00019 17 7.89562 17 9.00019V21.0001C17 22.1047 16.1046 23.0001 15 23.0001H3C1.89543 23.0001 1 22.1047 1 21.0001V9.00017Z"
+                                        fill="#0F0B08" />
+                                </svg>
+
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Bank Name -->
+                    <div class="space-y-2">
+                        <label class="text-white md:text-xl font-semibold text-sm font-nunito">Bank Name</label>
+                        <div class="relative group">
+                            <div id="copy-bank"
+                                class="w-full bg-white font-medium text-brand-darkSecondary p-3 rounded-[10px] font-nunito text-sm  md:text-xl pr-12">
+                                United Bank for Nigeria
+                            </div>
+                            <button
+                                class="absolute right-4 top-1/2 -translate-y-1/2 text-brand-darkSecondary hover:text-brand-gold transition-colors js-copy-btn"
+                                data-target="copy-bank">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M7 3C7 1.89542 7.89544 0.999992 9.00001 1L21 1.00009C22.1046 1.00009 23 1.89552 23 3.00009V15C23 16.1046 22.1046 17 21 17H20C19.4477 17 19 16.5523 19 16V8.50004C19 6.56705 17.433 5.00004 15.5 5.00004H8C7.44771 5.00004 7 4.55233 7 4.00004V3ZM1 9.00017C1 7.8956 1.89543 7.00017 3 7.00017L15 7.00019C16.1046 7.00019 17 7.89562 17 9.00019V21.0001C17 22.1047 16.1046 23.0001 15 23.0001H3C1.89543 23.0001 1 22.1047 1 21.0001V9.00017Z"
+                                        fill="#0F0B08" />
+                                </svg>
+
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Account Number -->
+                    <div class="md:col-span-2 space-y-2">
+                        <label class="text-white md:text-xl font-semibold text-sm font-nunito">Account Number</label>
+                        <div class="relative group">
+                            <div id="copy-number"
+                                class="w-full bg-white font-medium text-brand-darkSecondary p-3 rounded-[10px] font-nunito tex  md:text-xl pr-12">
+                                2064292100
+                            </div>
+                            <button
+                                class="absolute right-4 top-1/2 -translate-y-1/2 text-brand-darkSecondary hover:text-brand-gold transition-colors js-copy-btn"
+                                data-target="copy-number">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M7 3C7 1.89542 7.89544 0.999992 9.00001 1L21 1.00009C22.1046 1.00009 23 1.89552 23 3.00009V15C23 16.1046 22.1046 17 21 17H20C19.4477 17 19 16.5523 19 16V8.50004C19 6.56705 17.433 5.00004 15.5 5.00004H8C7.44771 5.00004 7 4.55233 7 4.00004V3ZM1 9.00017C1 7.8956 1.89543 7.00017 3 7.00017L15 7.00019C16.1046 7.00019 17 7.89562 17 9.00019V21.0001C17 22.1047 16.1046 23.0001 15 23.0001H3C1.89543 23.0001 1 22.1047 1 21.0001V9.00017Z"
+                                        fill="#0F0B08" />
+                                </svg>
+
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Navigation Links -->
+                    <nav class="hidden md:flex md:col-span-2 pt-8 flex-wrap gap-8 md:gap-12">
+                        <a href="index.html"
+                            class="text-lg md:text-2xl font-nunito hover:text-brand-gold transition-colors">Home</a>
+                        <a href="about.html"
+                            class="text-lg md:text-2xl font-nunito hover:text-brand-gold transition-colors">About</a>
+                        <a href="#"
+                            class="text-lg md:text-2xl font-nunito hover:text-brand-gold transition-colors">Businesses</a>
+                        <a href="#"
+                            class="text-lg md:text-2xl font-nunito hover:text-brand-gold transition-colors">Privacy</a>
+                        <a href="#"
+                            class="text-lg md:text-2xl font-nunito hover:text-brand-gold transition-colors">Terms of
+                            Use</a>
+                        <a href="#"
+                            class="text-lg md:text-2xl font-nunito hover:text-brand-gold transition-colors">Contact</a>
+                    </nav>
+                </div>
+            </div>
+
+            <!-- Bottom Bar -->
+            <div class="w-full mt-10 hidden md:block">
+                <img src="./assets/footer-line.png" alt="footer-gradient-line" srcset="">
+            </div>
+            <div
+                class=" mt-10 lg:mt-[30px] flex flex-col md:flex-row justify-between items-start md:items-center  font-nunito">
+                <div class="text-white text-xs md:text-xl">Fashion. Culture. Craft</div>
+                <div class="w-full my-4 md:hidden">
+                    <img src="./assets/footer-line.png" alt="footer-gradient-line" srcset="">
+                </div>
+                <div class="flex items-center space-x-2">
+                    <span
+                        class="border border-white rounded-full w-5 h-5 flex items-center justify-center text-[10px]">C</span>
+                    <span class="text-white text-xs md:text-xl">Copyright. Mr Edemakhiota. All rights reserved</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
