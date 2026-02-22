@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mr. Edemakhiota |About</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts: Playfair Display for Serif, Inter for Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Inter:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Inter:wght@300;400;500;600&family=Nunito+Sans:wght@400;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Optional: add your custom colors -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        nunito: ["Nunito Sans", 'sans-serif'],
+                        serif: ["Enikra", "serif"],
+                    },
+                    colors: {
+                        brand: {
+                            gold: '#B48B78',
+                            dark: '#050505',
+                            darkSecondary: "#0F0B08",
+                            lightDark: "#332D2B",
+                            secondary: "#E3C9AC",
+                            dark: "#0F0B08"
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<!-- min-h-screen mobile,sm:h-[120vh] min-h-[100svh] -->
+
+<body class="">
+    <header class="fixed top-0 mb-10 bg-white  w-full z-50 pt-4  ">
+        <div class="lg:max-w-[1500px] mx-auto px-4 lg:px-8 w-full  flex justify-between items-center text-white">
+            <div class="flex items-center space-x-2 pointer-events-auto cursor-pointer">
+                <img class="object-contain h-[25px] lg:h-auto" src="./assets/LOGO-02 1.png" alt="logo image" />
+            </div>
+            <div class="flex items-center space-x-14">
+                <nav class="hidden text-brand-dark sm:flex items-center font-nunito space-x-12 pointer-events-auto">
+                    <a href="index.html"
+                        class="text-base font-medium text-brand-dark hover:text-brand-gold transition-colors relative group nav-link">
+                        Home
+                        <span class="underline"></span>
+                    </a>
+                    <a href="about.html"
+                        class="text-base font-medium relative text-brand-dark hover:text-brand-gold transition-colors nav-link">About
+                        <span class="underline"></span>
+                    </a>
+                    <a href="#"
+                        class="text-base font-medium relative text-brand-dark hover:text-brand-gold transition-colors nav-link">Businesses
+                        <span class="underline"></span>
+                    </a>
+                </nav>
+
+                <div class="hidden sm:block">
+                    <button
+                        class="bg-brand-gold text-white font-nunito px-4 py-3 text-sm rounded-full flex items-center space-x-3 transition-all">
+                        <span>Partner with me</span>
+                        <div class="w-6 h-6 bg-white text-brand-dark p-1 rounded-full flex items-center justify-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <line x1="7" y1="17" x2="17" y2="7"></line>
+                                <polyline points="7 7 17 7 17 17"></polyline>
+                            </svg>
+                        </div>
+                    </button>
+                </div>
+                <div class="block sm:hidden">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M3.59998 18C3.59998 17.3372 4.13723 16.8 4.79998 16.8H19.2C19.8627 16.8 20.4 17.3372 20.4 18C20.4 18.6628 19.8627 19.2 19.2 19.2H4.79998C4.13723 19.2 3.59998 18.6628 3.59998 18ZM3.59998 6C3.59998 5.33725 4.13723 4.8 4.79998 4.8H19.2C19.8627 4.8 20.4 5.33725 20.4 6C20.4 6.66274 19.8627 7.2 19.2 7.2H4.79998C4.13723 7.2 3.59998 6.66274 3.59998 6ZM3.59998 12C3.59998 11.3373 4.13723 10.8 4.79998 10.8H12C12.6627 10.8 13.2 11.3373 13.2 12C13.2 12.6628 12.6627 13.2 12 13.2H4.79998C4.13723 13.2 3.59998 12.6628 3.59998 12Z"
+                            fill="white" />
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- HERO SECTION -->
+    <section id="" class=" w-full  md:max-w-4xl lg:max-w-[1500px] mt-20 lg:mt-32 px-4 lg:px-8    mx-auto   ">
+        <div class="flex flex-col gap-4 w-full xl:max-w-[1300px]">
+            <h2 class="text-4xl text-left  z-10 md:text-[70px] font-serif xl:text-left   leading-[1.2]  tracking-tight">
+                Privacy Policy</h2>
+            <p
+                class="text-[#332D2B] text-sm  md:text-lg font-nunito group-hover:text-brand-gold transition-colors duration-500 leading-[1.5]">
+                Last Updated: 12 Jan, 2026.</p>
+            <p
+                class="text-brand-dark text-sm  md:text-[22px] font-nunito group-hover:text-brand-gold transition-colors duration-500 leading-[1.5]">
+                At Mr Edemakhiota, your privacy is respected and protected. This Privacy Policy outlines how information
+                is collected, used, stored, and safeguarded when you visit or interact with this website. Transparency
+                and trust are important to us, and we are committed to handling personal information responsibly and in
+                accordance with applicable data protection standards.</p>
+            <p
+                class="text-brand-dark text-sm  md:text-[22px] font-nunito group-hover:text-brand-gold transition-colors duration-500 leading-[1.5]">
+                By using this website, you acknowledge and agree to the practices described in this policy. We encourage
+                you to review this page carefully to understand how your information is managed and the choices
+                available to you regarding your data.</p>
+        </div>
+
+    </section>
+
+    <!-- INFORMATION -->
+    <section id="" class=" w-full  md:max-w-4xl lg:max-w-[1500px] mt-[80px] lg:mt-[120px] px-4 lg:px-8    mx-auto   ">
+        <div class="flex flex-col gap-4 w-full xl:max-w-[1300px]">
+            <h2 class="text-[28px] text-left text-[#0F0B08]  md:text-[55px] font-serif xl:text-left   leading-[1.2]  tracking-tight">
+                <span class="font-nunito">1. </span> Information We Collect
+            </h2>
+            <p
+                class="text-brand-dark text-sm  md:text-xl font-nunito group-hover:text-brand-gold transition-colors duration-500 leading-[1.5]">
+                We may collect personal information you voluntarily provide, including your name, email address, and any
+                details submitted through contact forms, newsletters, or partnership inquiries.</p>
+            <p
+                class="text-brand-dark text-sm  md:text-xl font-nunito group-hover:text-brand-gold transition-colors duration-500 leading-[1.5]">
+                We may also collect non-personal information such as browser type, device information, and website usage
+                data to help improve user experience.</p>
+        </div>
+
+    </section>
+    <!-- 2. How Your Information Is Used section -->
+    <section id="" class=" w-full  md:max-w-4xl lg:max-w-[1500px] mt-[50px] lg:mt-[80px] px-4 lg:px-8    mx-auto   ">
+        <div class="flex flex-col gap-4 w-full xl:max-w-[1300px]">
+            <h2 class="text-[28px] text-left text-[#0F0B08]   md:text-[55px] font-serif xl:text-left   leading-[1.2]  tracking-tight">
+                <span class="font-nunito">2. </span> How Your Information Is Used
+            </h2>
+            <p
+                class="text-brand-dark text-sm  md:text-xl font-nunito group-hover:text-brand-gold transition-colors duration-500 leading-[1.5]">
+                Information collected may be used to:</p>
+            <ul class="list-disc ml-6">
+                <li class="text-brand-dark text-sm  md:text-xl font-nunito leading-[1.5]">Respond to inquiries or messages</li>
+                <li class="text-brand-dark text-sm  md:text-xl font-nunito leading-[1.5]">Communicate updates or relevant information</li>
+                <li class="text-brand-dark text-sm  md:text-xl font-nunito leading-[1.5]">Improve website functionality and content</li>
+                <li class="text-brand-dark text-sm  md:text-xl font-nunito leading-[1.5]">Maintain security and prevent misuse</li>
+            </ul>
+            <p
+                class="text-brand-dark text-sm  md:text-xl font-nunito leading-[1.5]">We do not sell, rent, or trade personal information to third parties. Any data shared is treated with confidentiality and used solely for the purposes outlined in this policy.</p>
+        </div>
+
+    </section>
+
+
+    <!-- 3. Cookies and Tracking Technologies -->
+    <section id="" class=" w-full  md:max-w-4xl lg:max-w-[1500px] mt-[50px] lg:mt-[80px] px-4 lg:px-8    mx-auto   ">
+        <div class="flex flex-col gap-4 w-full xl:max-w-[1300px]">
+            <h2 class="text-[28px] text-left text-[#0F0B08]  md:text-[55px] font-serif xl:text-left   leading-[1.2] ">
+                <span class="font-nunito">3. </span> Cookies and Tracking Technologies
+            </h2>
+            <p
+                class="text-brand-dark text-sm  md:text-xl font-nunito leading-[1.5]">
+               This website may use cookies and similar technologies to enhance user experience, analyze site traffic, and understand visitor behavior. You may choose to disable cookies through your browser settings..</p>
+        </div>
+
+    </section>
+
+     <!-- 4. Data Protection and Security section -->
+    <section id="" class=" w-full  md:max-w-4xl lg:max-w-[1500px] mt-[50px] lg:mt-[80px] px-4 lg:px-8    mx-auto   ">
+        <div class="flex flex-col gap-4 w-full xl:max-w-[1300px]">
+            <h2 class="text-[28px] text-left text-[#0F0B08]  md:text-[55px] font-serif xl:text-left   leading-[1.2] ">
+                <span class="font-nunito">4. </span> Data Protection and Security
+            </h2>
+            <p
+                class="text-brand-dark text-sm  md:text-xl font-nunito leading-[1.5]">
+               Reasonable measures are taken to protect personal information against unauthorized access, alteration, or disclosure. However, no method of online transmission is entirely secure.</p>
+        </div>
+
+    </section>
+
+    <!-- 5. Third-Party Links section -->
+     <section id="" class=" w-full  md:max-w-4xl lg:max-w-[1500px] mt-[50px] lg:mt-[80px] px-4 lg:px-8    mx-auto   ">
+        <div class="flex flex-col gap-4 w-full xl:max-w-[1300px]">
+            <h2 class="text-[28px] text-left text-[#0F0B08]  md:text-[55px] font-serif xl:text-left   leading-[1.2] ">
+                <span class="font-nunito">5. </span> Third-Party Links
+            </h2>
+            <p
+                class="text-brand-dark text-sm  md:text-xl font-nunito leading-[1.5]">
+              This website may contain links to external sites. We are not responsible for the privacy practices or content of third-party websites.</p>
+        </div>
+
+    </section>
+
+    
+    <!-- 6. Your Rights section -->
+     <section id="" class=" w-full  md:max-w-4xl lg:max-w-[1500px] mt-[50px] lg:mt-[80px] px-4 lg:px-8    mx-auto   ">
+        <div class="flex flex-col gap-4 w-full xl:max-w-[1300px]">
+            <h2 class="text-[28px] text-left text-[#0F0B08]  md:text-[55px] font-serif xl:text-left   leading-[1.2] ">
+                <span class="font-nunito">6. </span> Your Rights
+            </h2>
+            <p
+                class="text-brand-dark text-sm  md:text-xl font-nunito leading-[1.5]">
+             You have the right to request access to, correction of, or deletion of your personal information. Requests can be made through the contact information provided on this website.</p>
+        </div>
+
+    </section>
+
+      <!-- 7. Policy Updates section -->
+     <section id="" class=" w-full  md:max-w-4xl lg:max-w-[1500px] mt-[50px] lg:mt-[80px] px-4 lg:px-8    mx-auto   ">
+        <div class="flex flex-col gap-4 w-full xl:max-w-[1300px]">
+            <h2 class="text-[28px] text-left text-[#0F0B08]  md:text-[55px] font-serif xl:text-left   leading-[1.2] ">
+                <span class="font-nunito">7. </span> Policy Updates
+            </h2>
+            <p
+                class="text-brand-dark text-sm  md:text-xl font-nunito leading-[1.5]">
+           You have the right to request access to, correction of, or deletion of your personal information. Requests can be made through the contact information provided on this website.</p>
+        </div>
+
+    </section>
+
+       <!-- 8. Contact Information section -->
+     <section id="" class=" w-full  md:max-w-4xl lg:max-w-[1500px] pb-[80px] lg:pb-[120px] mt-[50px] lg:mt-[80px] px-4 lg:px-8    mx-auto   ">
+        <div class="flex flex-col gap-4 w-full xl:max-w-[1300px]">
+            <h2 class="text-[28px] text-left text-[#0F0B08]  md:text-[55px] font-serif xl:text-left   leading-[1.2] ">
+                <span class="font-nunito">8. </span> Contact Information
+            </h2>
+            <p
+                class="text-brand-dark text-sm  md:text-xl font-nunito leading-[1.5]">
+           For questions or concerns regarding this Privacy Policy, please reach out through the contact page on this website.</p>
+        </div>
+
+    </section>
+
+    <!-- FOOTER SECTION -->
+    <footer class=" lg:max-w-[1500px] px-4 lg:px-8 md:max-w-4xl mx-auto ">
+        <div class="w-full bg-[#59291D] text-white p-5 md:p-[30px] rounded-tl-[20px] rounded-tr-[20px] ">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 xl:gap-24 ">
+                <!-- Left Column -->
+                <div class="lg:col-span-4 flex flex-col space-y-[15px] md:space-y-8">
+                    <div class="flex items-start justify-between w-full md:flex-col">
+                        <div class="w-1/3 md:w-full">
+                            <img class="object-contain h-[30px]" src="./assets/LOGO-02 1 copy.png" alt="logo image" />
+                            <p
+                                class="text-white pt-[14px] font-extralight text-xs sm:text-sm md:text-xl font-nunito leading-relaxed max-w-sm">
+                                Edwin Osagie Edemakhiota is a Nigerian entrepreneur, software developer, and business
+                                executive whose journey is defined by resilience, continuous learning, and visionary
+                                leadership.
+                            </p>
+                        </div>
+                        <div class="w-1/2 md:hidden">
+                            <!-- Navigation Links -->
+                            <nav class="grid grid-cols-2 gap-4">
+                                <a href="index.html"
+                                    class="text-xs font-nunito hover:text-brand-gold transition-colors">Home</a>
+                                <a href="about.html"
+                                    class="text-xs font-nunito hover:text-brand-gold transition-colors">About</a>
+                                <a href="#"
+                                    class="text-xs font-nunito hover:text-brand-gold transition-colors">Businesses</a>
+                                <a href="./privacy.html"
+                                    class="text-xs font-nunito hover:text-brand-gold transition-colors">Privacy</a>
+                                <a href="./terms.html" class="text-xs font-nunito hover:text-brand-gold transition-colors">Terms of
+                                    Use</a>
+                                <a href="#"
+                                    class="text-xs font-nunito hover:text-brand-gold transition-colors">Contact</a>
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="pt-[30px]">
+                        <h3 class="font-serif text-sm sm:text-base md:text-2xl">Get in Touch</h3>
+                        <div class="flex space-x-10 mt-4">
+                            <!-- Social Icons -->
+                            <a href="#">
+                                <img class="h-8 w-8" src="./assets/facebook.png" alt="facebook" />
+                            </a>
+                            <a href="#"> <img class="h-8 w-8" src="./assets/instagram 1.png" alt="instagram" /> </a>
+                            <a href="#"> <img class="h-8 w-8" src="./assets/twitter 1.png" alt="twitter" /> </a>
+                            <a href="#"> <img class="h-8 w-8" src="./assets/linkedin 1.png" alt="linkedin" /> </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column -->
+                <div class="lg:col-span-8 grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8  pt-[30px]">
+                    <div class="md:col-span-2 ">
+                        <h3 class="font-serif text-sm  md:text-2xl">Partner With Me</h3>
+                        <p
+                            class="text-white pt-1 md:pt-4 font-light text-xs max-w-[250px] md:text-xl font-nunito lg:max-w-sm">
+                            Kindly use the account numbers below to partner with Mr Edemakhiota</p>
+                    </div>
+
+                    <!-- Account Name -->
+                    <div class="space-y-2">
+                        <label class="text-white md:text-xl font-semibold text-sm font-nunito">Account Name</label>
+                        <div class="relative group">
+                            <div id="copy-name"
+                                class="w-full bg-white font-medium text-sm text-brand-darkSecondary p-3 rounded-[10px] font-nunito md:text-xl pr-12">
+                                Edema Osagie Edwin
+                            </div>
+                            <button
+                                class="absolute right-4 top-1/2 -translate-y-1/2 text-brand-darkSecondary hover:text-brand-gold transition-colors js-copy-btn"
+                                data-target="copy-name">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M7 3C7 1.89542 7.89544 0.999992 9.00001 1L21 1.00009C22.1046 1.00009 23 1.89552 23 3.00009V15C23 16.1046 22.1046 17 21 17H20C19.4477 17 19 16.5523 19 16V8.50004C19 6.56705 17.433 5.00004 15.5 5.00004H8C7.44771 5.00004 7 4.55233 7 4.00004V3ZM1 9.00017C1 7.8956 1.89543 7.00017 3 7.00017L15 7.00019C16.1046 7.00019 17 7.89562 17 9.00019V21.0001C17 22.1047 16.1046 23.0001 15 23.0001H3C1.89543 23.0001 1 22.1047 1 21.0001V9.00017Z"
+                                        fill="#0F0B08" />
+                                </svg>
+
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Bank Name -->
+                    <div class="space-y-2">
+                        <label class="text-white md:text-xl font-semibold text-sm font-nunito">Bank Name</label>
+                        <div class="relative group">
+                            <div id="copy-bank"
+                                class="w-full bg-white font-medium text-brand-darkSecondary p-3 rounded-[10px] font-nunito text-sm  md:text-xl pr-12">
+                                United Bank for Nigeria
+                            </div>
+                            <button
+                                class="absolute right-4 top-1/2 -translate-y-1/2 text-brand-darkSecondary hover:text-brand-gold transition-colors js-copy-btn"
+                                data-target="copy-bank">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M7 3C7 1.89542 7.89544 0.999992 9.00001 1L21 1.00009C22.1046 1.00009 23 1.89552 23 3.00009V15C23 16.1046 22.1046 17 21 17H20C19.4477 17 19 16.5523 19 16V8.50004C19 6.56705 17.433 5.00004 15.5 5.00004H8C7.44771 5.00004 7 4.55233 7 4.00004V3ZM1 9.00017C1 7.8956 1.89543 7.00017 3 7.00017L15 7.00019C16.1046 7.00019 17 7.89562 17 9.00019V21.0001C17 22.1047 16.1046 23.0001 15 23.0001H3C1.89543 23.0001 1 22.1047 1 21.0001V9.00017Z"
+                                        fill="#0F0B08" />
+                                </svg>
+
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Account Number -->
+                    <div class="md:col-span-2 space-y-2">
+                        <label class="text-white md:text-xl font-semibold text-sm font-nunito">Account Number</label>
+                        <div class="relative group">
+                            <div id="copy-number"
+                                class="w-full bg-white font-medium text-brand-darkSecondary p-3 rounded-[10px] font-nunito tex  md:text-xl pr-12">
+                                2064292100
+                            </div>
+                            <button
+                                class="absolute right-4 top-1/2 -translate-y-1/2 text-brand-darkSecondary hover:text-brand-gold transition-colors js-copy-btn"
+                                data-target="copy-number">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M7 3C7 1.89542 7.89544 0.999992 9.00001 1L21 1.00009C22.1046 1.00009 23 1.89552 23 3.00009V15C23 16.1046 22.1046 17 21 17H20C19.4477 17 19 16.5523 19 16V8.50004C19 6.56705 17.433 5.00004 15.5 5.00004H8C7.44771 5.00004 7 4.55233 7 4.00004V3ZM1 9.00017C1 7.8956 1.89543 7.00017 3 7.00017L15 7.00019C16.1046 7.00019 17 7.89562 17 9.00019V21.0001C17 22.1047 16.1046 23.0001 15 23.0001H3C1.89543 23.0001 1 22.1047 1 21.0001V9.00017Z"
+                                        fill="#0F0B08" />
+                                </svg>
+
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Navigation Links -->
+                    <nav class="hidden md:flex md:col-span-2 pt-8 flex-wrap gap-8 md:gap-12">
+                        <a href="index.html"
+                            class="text-lg md:text-2xl font-nunito hover:text-brand-gold transition-colors">Home</a>
+                        <a href="about.html"
+                            class="text-lg md:text-2xl font-nunito hover:text-brand-gold transition-colors">About</a>
+                        <a href="#"
+                            class="text-lg md:text-2xl font-nunito hover:text-brand-gold transition-colors">Businesses</a>
+                        <a href="#"
+                            class="text-lg md:text-2xl font-nunito hover:text-brand-gold transition-colors">Privacy</a>
+                        <a href="./terms.html"
+                            class="text-lg md:text-2xl font-nunito hover:text-brand-gold transition-colors">Terms of
+                            Use</a>
+                        <a href="#"
+                            class="text-lg md:text-2xl font-nunito hover:text-brand-gold transition-colors">Contact</a>
+                    </nav>
+                </div>
+            </div>
+
+            <!-- Bottom Bar -->
+            <div class="w-full mt-10 hidden md:block">
+                <img src="./assets/footer-line.png" alt="footer-gradient-line" srcset="">
+            </div>
+            <div
+                class=" mt-10 lg:mt-[30px] flex flex-col md:flex-row justify-between items-start md:items-center  font-nunito">
+                <div class="text-white text-xs md:text-xl">Fashion. Culture. Craft</div>
+                <div class="w-full my-4 md:hidden">
+                    <img src="./assets/footer-line.png" alt="footer-gradient-line" srcset="">
+                </div>
+                <div class="flex items-center space-x-2">
+                    <span
+                        class="border border-white rounded-full w-5 h-5 flex items-center justify-center text-[10px]">C</span>
+                    <span class="text-white text-xs md:text-xl">Copyright. Mr Edemakhiota. All rights reserved</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+
+</html>

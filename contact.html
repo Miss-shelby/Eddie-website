@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mr. Edemakhiota | Contact</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Inter:wght@300;400;500;600&family=Nunito+Sans:wght@400;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Tailwind Configuration -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        nunito: ["Nunito Sans", 'sans-serif'],
+                        serif: ["Enikra", "serif"],
+                    },
+                    colors: {
+                        brand: {
+                            gold: '#B48B78',
+                            dark: '#050505',
+                            darkSecondary: "#0F0B08",
+                            lightDark: "#332D2B",
+                            secondary: "#E3C9AC",
+                            dark: "#0F0B08"
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .custom-radio:checked {
+            background-color: #B48B78;
+            border-color: #B48B78;
+        }
+    </style>
+</head>
+
+<body class="bg-white">
+    <!-- NAVIGATION HEADER -->
+    <header class="fixed top-0 mb-10 bg-white w-full z-50 pt-4">
+        <div class="lg:max-w-[1500px] mx-auto px-4 lg:px-8 w-full flex justify-between items-center text-white">
+            <div class="flex items-center space-x-2 pointer-events-auto cursor-pointer">
+                <a href="index.html">
+                    <img class="object-contain h-[25px] lg:h-auto" src="./assets/LOGO-02 1.png" alt="logo image" />
+                </a>
+            </div>
+            <div class="flex items-center space-x-14">
+                <nav class="hidden text-brand-dark sm:flex items-center font-nunito space-x-12 pointer-events-auto">
+                    <a href="index.html"
+                        class="text-base font-medium text-brand-dark hover:text-brand-gold transition-colors relative group nav-link">
+                        Home
+                        <span class="underline"></span>
+                    </a>
+                    <a href="about.html"
+                        class="text-base font-medium relative text-brand-dark hover:text-brand-gold transition-colors nav-link">
+                        About
+                        <span class="underline"></span>
+                    </a>
+                    <a href="./business.html"
+                        class="text-base font-medium relative text-brand-dark hover:text-brand-gold transition-colors nav-link">
+                        Businesses
+                        <span class="underline"></span>
+                    </a>
+                </nav>
+
+                <div class="hidden sm:block">
+                    <button
+                        class="bg-brand-gold text-white font-nunito px-4 py-3 text-sm rounded-full flex items-center space-x-3 transition-all hover:opacity-90">
+                        <span>Partner with me</span>
+                        <div class="w-6 h-6 bg-white text-brand-dark p-1 rounded-full flex items-center justify-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <line x1="7" y1="17" x2="17" y2="7"></line>
+                                <polyline points="7 7 17 7 17 17"></polyline>
+                            </svg>
+                        </div>
+                    </button>
+                </div>
+                <div class="block sm:hidden">
+                    <button id="mobile-menu-btn" class="text-brand-dark">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M3.59998 18C3.59998 17.3372 4.13723 16.8 4.79998 16.8H19.2C19.8627 16.8 20.4 17.3372 20.4 18C20.4 18.6628 19.8627 19.2 19.2 19.2H4.79998C4.13723 19.2 3.59998 18.6628 3.59998 18ZM3.59998 6C3.59998 5.33725 4.13723 4.8 4.79998 4.8H19.2C19.8627 4.8 20.4 5.33725 20.4 6C20.4 6.66274 19.8627 7.2 19.2 7.2H4.79998C4.13723 7.2 3.59998 6.66274 3.59998 6ZM3.59998 12C3.59998 11.3373 4.13723 10.8 4.79998 10.8H12C12.6627 10.8 13.2 11.3373 13.2 12C13.2 12.6628 12.6627 13.2 12 13.2H4.79998C4.13723 13.2 3.59998 12.6628 3.59998 12Z"
+                                fill="currentColor" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- CONTACT MAIN SECTION -->
+    <main class="lg:max-w-[1500px] md:max-w-4xl  mx-auto px-4 lg:px-8 mt-20 lg:mt-40 mb-[80px] lg:mb-[120px]">
+        <!-- LEFT COLUMN: FORM -->
+        <div class="flex flex-col gap-6 lg:gap-8">
+            <div>
+                <p class="text-[#E3C9AC] font-semibold text-xs md:text-2xl font-nunito mb-2">Contact</p>
+                <h1
+                    class="text-4xl text-left md:text-[70px] font-serif leading-[1.1] tracking-tight text-[#0F0B08] mb-6">
+                    Get in Touch With <br> Mr Edemakhiota
+                </h1>
+                <p class="text-brand-dark text-sm md:text-xl font-nunito leading-[1.6] max-w-2xl">
+                    Whether it's a business inquiry, partnership discussion, or general message, you're welcome to
+                    reach out. Every message is reviewed with intention and responded to where appropriate.
+                </p>
+            </div>
+        </div>
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 mt-[40px] lg:mt-[120px] items-center  lg:gap-20   ">
+            <!-- CONTACT FORM -->
+            <form action="#" method="POST"
+                class="flex flex-col gap-8 md:gap-20 order-2 lg:order-1 overflow-x-hidden md:overflow-x-visible">
+                <!-- FULL NAME -->
+                <div class="flex flex-col gap-4 md:gap-6">
+                    <label for="full-name" class="text-[#0F0B08] text-base md:text-3xl font-semibold font-nunito">Full
+                        Name</label>
+                    <input type="text" id="full-name" name="full-name" placeholder="eg: John Doe"
+                        class="w-full bg-transparent border border-[#8A8A8A59] rounded-[10px] py-4 pl-5 md:py-4 md:pl-5 text-base md:text-3xl font-nunito text-[#050505] placeholder-[#8A8A8A] placeholder:text-sm md:placeholder:text-xl placeholder:font-nunito focus:outline-none focus:border-brand-gold transition-all">
+                </div>
+
+                <!-- EMAIL ADDRESS -->
+                <div class="flex flex-col gap-4 md:gap-6">
+                    <label for="full-name" class="text-[#0F0B08] text-base md:text-3xl font-semibold font-nunito">Email
+                        Address</label>
+                    <input type="text" id="full-name" name="full-name" placeholder="example@gmail.com"
+                        class="w-full bg-transparent border border-[#8A8A8A59] rounded-[10px] py-4 pl-5 md:py-4 md:pl-5 text-base md:text-3xl font-nunito text-[#050505] placeholder-[#8A8A8A] placeholder:text-sm md:placeholder:text-xl placeholder:font-nunito focus:outline-none focus:border-brand-gold transition-all">
+                </div>
+
+                <!-- PHONE NUMBER -->
+                <div class="flex flex-col gap-4 md:gap-6">
+                    <label for="phone-number" class="text-[#0F0B08] text-base md:text-3xl font-semibold font-nunito">Phone
+                        Number</label>
+                    <input type="text" id="phone-number" name="phone-number" placeholder="12345678901"
+                        class="w-full bg-transparent border border-[#8A8A8A59] rounded-[10px] py-4 pl-5 md:py-4 md:pl-5 text-base md:text-3xl font-nunito text-[#050505] placeholder-[#8A8A8A] placeholder:text-sm md:placeholder:text-xl placeholder:font-nunito focus:outline-none focus:border-brand-gold transition-all">
+                </div>
+
+
+                <!-- SUBJECT SELECTION -->
+                <div class="flex flex-col gap-4 md:gap-6">
+                    <p class="text-[#0F0B08] text-base md:text-3xl font-semibold font-nunito">Select Subject?</p>
+                    <div class="grid grid-cols-1 gap-6">
+                        <label class="flex items-center gap-3 cursor-pointer group">
+                            <input type="radio" name="subject" value="salon" class="hidden peer">
+                            <div
+                                class="w-5 h-5 md:w-6 md:h-6 border-2 border-[#59291D] rounded-full flex items-center justify-center peer-checked:bg-[#59291D] transition-all">
+                                <div
+                                    class="w-2 h-2 md:w-2.5 md:h-2.5 bg-white rounded-full opacity-0 peer-checked:opacity-100">
+                                </div>
+                            </div>
+                            <span
+                                class="text-brand-dark text-sm md:text-xl font-nunito group-hover:text-brand-gold transition-colors">Salon
+                                Management</span>
+                        </label>
+
+                        <label class="flex items-center gap-3 cursor-pointer group">
+                            <input type="radio" name="subject" value="cleaning" class="hidden peer">
+                            <div
+                                class="w-5 h-5 md:w-6 md:h-6 border-2 border-[#59291D] rounded-full flex items-center justify-center peer-checked:bg-[#59291D] transition-all">
+                                <div
+                                    class="w-2 h-2 md:w-2.5 md:h-2.5 bg-white rounded-full opacity-0 peer-checked:opacity-100">
+                                </div>
+                            </div>
+                            <span
+                                class="text-brand-dark text-sm md:text-xl font-nunito group-hover:text-brand-gold transition-colors">Cleaning
+                                Services Management</span>
+                        </label>
+
+                        <label class="flex items-center gap-3 cursor-pointer group">
+                            <input type="radio" name="subject" value="business" class="hidden peer">
+                            <div
+                                class="w-5 h-5 md:w-6 md:h-6 border-2 border-[#59291D] rounded-full flex items-center justify-center peer-checked:bg-[#59291D] transition-all">
+                                <div
+                                    class="w-2 h-2 md:w-2.5 md:h-2.5 bg-white rounded-full opacity-0 peer-checked:opacity-100">
+                                </div>
+                            </div>
+                            <span
+                                class="text-brand-dark text-sm md:text-xl font-nunito group-hover:text-brand-gold transition-colors">Business
+                                Process</span>
+                        </label>
+
+                        <label class="flex items-center gap-3 cursor-pointer group">
+                            <input type="radio" name="subject" value="consultation" class="hidden peer" checked>
+                            <div
+                                class="w-5 h-5 md:w-6 md:h-6 border-2 border-[#59291D] rounded-full flex items-center justify-center peer-checked:bg-[#59291D] transition-all">
+                                <div
+                                    class="w-2 h-2 md:w-2.5 md:h-2.5 bg-white rounded-full opacity-0 peer-checked:opacity-100">
+                                </div>
+                            </div>
+                            <span
+                                class="text-brand-dark text-sm md:text-xl font-nunito group-hover:text-brand-gold transition-colors">General
+                                Consultation</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- MESSAGE -->
+                <div class="flex flex-col gap-3">
+                    <label for="message"
+                        class="text-[#0F0B08] text-sm md:text-3xl font-semibold font-nunito">Message</label>
+                    <textarea id="message" name="message" rows="6" placeholder="Type message..."
+                        class="w-full bg-transparent placeholder:font-italic placeholder:text-[#8A8A8A] border border-[#F0EBE8] rounded-[10px] p-4 md:p-6 text-sm md:text-xl font- text-[#050505] focus:outline-none focus:border-brand-gold transition-all resize-none"></textarea>
+                </div>
+
+                <!-- SUBMIT BUTTON -->
+                <div class="mt-4 w-full sm:w-fit">
+                    <button type="submit"
+                        class="bg-brand-gold text-white text-center sm:text-left font-nunito px-8 md:px-10 py-4 md:py-6 text-sm md:text-xl rounded-full flex items-center justify-center sm:justify-start space-x-3 transition-all hover:opacity-90 w-full sm:w-fit">
+                        <span>Book Consultation</span>
+                        <div
+                            class="w-6 h-6 md:w-8 md:h-8 bg-white text-brand-dark p-1 rounded-full flex items-center justify-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                                stroke-linejoin="round" class="md:w-5 md:h-5">
+                                <line x1="7" y1="17" x2="17" y2="7"></line>
+                                <polyline points="7 7 17 7 17 17"></polyline>
+                            </svg>
+                        </div>
+                    </button>
+                </div>
+            </form>
+
+
+            <!-- RIGHT COLUMN: IMAGE -->
+            <div class="w-full flex order-1 lg:order-2">
+                <img class="object-cover w-full h-auto rounded-[20px] shadow-lg" src="./assets/contactImg.png"
+                    alt="Mr Edemakhiota portrait" />
+            </div>
+        </div>
+    </main>
+
+    <!-- FOOTER SECTION -->
+    <footer class=" lg:max-w-[1500px] px-4 lg:px-8 md:max-w-4xl mx-auto w-full">
+        <div class="w-full text-white p-4 md:p-[30px] bg-[#59291D] rounded-tl-[20px] rounded-tr-[20px]">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 xl:gap-24">
+                <!-- Left Column -->
+                <div class="lg:col-span-4 flex flex-col space-y-[15px] md:space-y-8">
+                    <div class="flex items-start justify-between w-full md:flex-col">
+                        <div class="w-1/3 md:w-full">
+                            <img class="object-contain h-[30px]" src="./assets/LOGO-02 1 copy.png" alt="logo image" />
+                            <p
+                                class="text-white pt-[14px] font-extralight text-xs sm:text-sm md:text-xl font-nunito leading-relaxed max-w-sm">
+                                Edwin Osagie Edemakhiota is a Nigerian entrepreneur, software developer, and business
+                                executive whose journey is defined by resilience, continuous learning, and visionary
+                                leadership.
+                            </p>
+                        </div>
+                        <div class="w-1/2 md:hidden">
+                            <nav class="grid grid-cols-2 gap-4">
+                                <a href="index.html"
+                                    class="text-xs font-nunito hover:text-brand-gold transition-colors">Home</a>
+                                <a href="about.html"
+                                    class="text-xs font-nunito hover:text-brand-gold transition-colors">About</a>
+                                <a href="#"
+                                    class="text-xs font-nunito hover:text-brand-gold transition-colors ">Businesses</a>
+                                <a href="privacy.html"
+                                    class="text-xs font-nunito hover:text-brand-gold transition-colors">Privacy</a>
+                                <a href="terms.html"
+                                    class="text-xs font-nunito hover:text-brand-gold transition-colors">Terms of Use</a>
+                                <a href="contact.html"
+                                    class="text-xs font-nunito hover:text-brand-gold transition-colors">Contact</a>
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="pt-[30px]">
+                        <h3 class="font-serif text-sm sm:text-base md:text-2xl">Get in Touch</h3>
+                        <div class="flex space-x-10 mt-4">
+                            <a href="#"><img class="h-8 w-8" src="./assets/facebook.png" alt="facebook" /></a>
+                            <a href="#"><img class="h-8 w-8" src="./assets/instagram 1.png" alt="instagram" /></a>
+                            <a href="#"><img class="h-8 w-8" src="./assets/twitter 1.png" alt="twitter" /></a>
+                            <a href="#"><img class="h-8 w-8" src="./assets/linkedin 1.png" alt="linkedin" /></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column -->
+                <div class="lg:col-span-8 grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8 pt-[30px]">
+                    <div class="md:col-span-2">
+                        <h3 class="font-serif text-sm md:text-2xl">Partner With Me</h3>
+                        <p
+                            class="text-white pt-1 md:pt-4 font-light text-xs max-w-[250px] md:text-xl font-nunito lg:max-w-sm">
+                            Kindly use the account numbers below to partner with Mr Edemakhiota
+                        </p>
+                    </div>
+                    <!-- Account Details -->
+                    <div class="space-y-2">
+                        <label class="text-white md:text-xl font-semibold text-sm font-nunito">Account Name</label>
+                        <div
+                            class="w-full bg-white font-medium text-sm text-brand-darkSecondary p-3 rounded-[10px] font-nunito md:text-xl">
+                            Edema Osagie Edwin</div>
+                    </div>
+                    <div class="space-y-2">
+                        <label class="text-white md:text-xl font-semibold text-sm font-nunito">Bank Name</label>
+                        <div
+                            class="w-full bg-white font-medium text-brand-darkSecondary p-3 rounded-[10px] font-nunito text-sm md:text-xl">
+                            United Bank for Nigeria</div>
+                    </div>
+                    <div class="md:col-span-2 space-y-2">
+                        <label class="text-white md:text-xl font-semibold text-sm font-nunito">Account Number</label>
+                        <div
+                            class="w-full bg-white font-medium text-brand-darkSecondary p-3 rounded-[10px] font-nunito text-sm md:text-xl">
+                            2064292100</div>
+                    </div>
+
+                    <!-- Navigation Links -->
+                    <nav class="hidden md:flex md:col-span-2 pt-8 flex-wrap gap-8 md:gap-12">
+                        <a href="index.html"
+                            class="text-lg md:text-2xl font-nunito hover:text-brand-gold transition-colors">Home</a>
+                        <a href="about.html"
+                            class="text-lg md:text-2xl font-nunito hover:text-brand-gold transition-colors">About</a>
+                        <a href="#"
+                            class="text-lg md:text-2xl font-nunito hover:text-brand-gold transition-colors ">Businesses</a>
+                        <a href="privacy.html"
+                            class="text-lg md:text-2xl font-nunito hover:text-brand-gold transition-colors">Privacy</a>
+                        <a href="terms.html"
+                            class="text-lg md:text-2xl font-nunito hover:text-brand-gold transition-colors">Terms of
+                            Use</a>
+                        <a href="contact.html"
+                            class="text-lg md:text-2xl font-nunito text-brand-gold transition-colors">Contact</a>
+                    </nav>
+                </div>
+            </div>
+
+            <!-- Bottom Bar -->
+            <div class="w-full mt-10 hidden md:block">
+                <img src="./assets/footer-line.png" alt="footer-gradient-line" srcset="">
+            </div>
+            <div
+                class="mt-10 lg:mt-[30px] flex flex-col md:flex-row justify-between items-start md:items-center font-nunito">
+                <div class="text-white text-xs md:text-xl">Fashion. Culture. Craft</div>
+                <div class="w-full my-4 md:hidden">
+                    <img src="./assets/footer-line.png" alt="footer-gradient-line" srcset="">
+                </div>
+                <div class="flex items-center space-x-2">
+                    <span
+                        class="border border-white rounded-full w-5 h-5 flex items-center justify-center text-[10px]">C</span>
+                    <span class="text-white text-xs md:text-xl">Copyright. Mr Edemakhiota. All rights reserved</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
