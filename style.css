@@ -145,6 +145,18 @@
     height: 27px;
 }
 }
+@media (max-width: 480px) {
+ .js-copy-btn svg{
+    width: 20px;
+    height: 20px;
+  }
+}
+@media (min-width:520px) {
+  #mobile-menu-overlay .nav-mobile-btn{
+    max-width:   300px !important;
+  
+  }
+}
 
 @media (max-width: 1024px) {
   .vertical-gradient-line {
