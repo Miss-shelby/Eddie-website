@@ -7,19 +7,15 @@ function updateActiveLink() {
 
   links.forEach(link => {
     const href = link.getAttribute('href');
-    // Check if href matches fileName (handling empty/root as index.html)
-    // Removed '#' from the index.html fallback to avoid matching 'Businesses' links
-    const isMatch = href === fileName || (fileName === 'index.html' && (href === './' || href === ''));
+    // Normalize href for matching
+    const normalizedHref = href.replace('./', '');
+    const isMatch = normalizedHref === fileName ||
+      (fileName === 'index.html' && (!normalizedHref || normalizedHref === 'index.html'));
 
     if (isMatch) {
       link.classList.add('active');
-      link.classList.remove('text-gray-400');
     } else {
       link.classList.remove('active');
-      // Only re-add text-gray-400 if it's a structural link, not home
-      if (link.textContent.trim() !== 'Home') {
-        link.classList.add('text-gray-400');
-      }
     }
   });
 }
@@ -165,46 +161,17 @@ if (mainHeader) {
     const heroHeight = heroSection ? heroSection.offsetHeight - 80 : 600;
 
     if (scrollY < heroHeight) {
-      // STATE: HERO ZONE (Transparent BG, White Text)
-      mainHeader.classList.remove('bg-white/95', 'backdrop-blur-md', 'shadow-sm');
-      mainHeader.classList.add('bg-transparent');
-
-      if (headerContainer) {
-        headerContainer.classList.add('text-white');
-        headerContainer.classList.remove('text-brand-dark');
-      }
-
-      navLinks.forEach(link => {
-        if (!link.classList.contains('active')) {
-          link.classList.add('text-gray-400');
-          link.classList.remove('text-brand-dark', 'text-white');
-        } else {
-          link.classList.add('text-white');
-          link.classList.remove('text-brand-dark', 'text-gray-400');
-        }
-      });
-      if (mobileToggle) {
-        mobileToggle.classList.add('text-white');
-        mobileToggle.classList.remove('text-brand-dark');
-      }
-
+      // STATE: HERO ZONE
+      mainHeader.classList.remove('header-scrolled', 'bg-white/80', 'backdrop-blur-md', 'shadow-sm', 'py-2');
+      mainHeader.classList.add('bg-transparent', 'pt-4');
+      const container = mainHeader.querySelector('div');
+      if (container) container.classList.add('text-white');
     } else {
-      // STATE: CONTENT ZONE (White BG, Dark Text)
-      mainHeader.classList.add('bg-white/95', 'backdrop-blur-md', 'shadow-sm','pb-3');
-      mainHeader.classList.remove('bg-transparent');
-
-      if (headerContainer) {
-        headerContainer.classList.add('text-brand-dark');
-        headerContainer.classList.remove('text-white');
-      }
-      navLinks.forEach(link => {
-        link.classList.add('text-brand-dark');
-        link.classList.remove('text-gray-400', 'text-white');
-      });
-      if (mobileToggle) {
-        mobileToggle.classList.add('text-brand-dark');
-        mobileToggle.classList.remove('text-white');
-      }
+      // STATE: CONTENT ZONE
+      mainHeader.classList.add('header-scrolled', 'bg-white/80', 'backdrop-blur-md', 'shadow-sm', 'py-2');
+      mainHeader.classList.remove('bg-transparent', 'pt-4');
+      const container = mainHeader.querySelector('div');
+      if (container) container.classList.remove('text-white');
     }
   });
 

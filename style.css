@@ -4,11 +4,13 @@
   font-weight: normal;
   font-style: normal;
 }
-*{
+
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
 .vertical-gradient-line {
   border: 2px solid;
   border-image-source: linear-gradient(180deg, rgba(255, 255, 255, 0) -4.79%, #000000 50.34%, rgba(255, 255, 255, 0) 105.48%);
@@ -41,6 +43,58 @@
   color: white;
   /* position: relative;   */
 }
+
+.nav-link {
+  position: relative;
+  /* color: black; */
+  /* text-gray-400 equivalent */
+  transition: all 0.3s ease;
+}
+
+/* On Dark/Transparent bg (Default) */
+.nav-link:hover {
+  color: white;
+}
+
+.nav-link.active {
+  color: white;
+  font-weight: 700;
+}
+
+/* On White bg (Scrolled or static white headers, or mobile overlay) */
+header.bg-white .nav-link.active,
+header.header-scrolled .nav-link.active,
+#mobile-menu-overlay .nav-link.active {
+  color: var(--brand-dark);
+  font-weight: 700;
+}
+
+header.bg-white .nav-link,
+header.header-scrolled .nav-link,
+#mobile-menu-overlay .nav-link {
+  color: black;
+}
+
+header.bg-white .nav-link:hover,
+header.header-scrolled .nav-link:hover,
+#mobile-menu-overlay .nav-link:hover {
+  color: var(--brand-gold);
+}
+
+/* Scrolled Header Refinements */
+header.header-scrolled {
+  transition: background-color 0.4s ease, backdrop-filter 0.4s ease, padding 0.4s ease, box-shadow 0.4s ease;
+}
+
+header.header-scrolled .text-white {
+  color: var(--brand-dark) !important;
+}
+
+/* Ensure Logo and Mobile Toggle adapt when text-white is removed */
+header.header-scrolled #mobile-menu-toggle {
+  color: var(--brand-dark);
+}
+
 
 .nav-link .underline {
   position: absolute;
@@ -79,10 +133,12 @@
   justify-content: center;
   transition: all 0.3s ease;
 }
-.review .carousel-btn{ 
+
+.review .carousel-btn {
   width: 65px;
   height: 37px;
 }
+
 .carousel-btn:disabled {
   opacity: 0.5;
   cursor: not-allowed;
@@ -122,13 +178,15 @@
   max-height: 500px;
   object-fit: contain;
 }
-.horizontal-gradient-line{
+
+.horizontal-gradient-line {
   border: 1px solid;
-    width: 90%;
-    height: 0px;
-    border-image-source: linear-gradient(90deg, rgba(255, 255, 255, 0) -4.79%, #000000 50.34%, rgba(255, 255, 255, 0) 105.48%);
-    border-image-slice: 1;
+  width: 90%;
+  height: 0px;
+  border-image-source: linear-gradient(90deg, rgba(255, 255, 255, 0) -4.79%, #000000 50.34%, rgba(255, 255, 255, 0) 105.48%);
+  border-image-slice: 1;
 }
+
 @media (max-width: 768px) {
   .fashion-image-container .carousel-item {
     max-height: 300px;
@@ -144,21 +202,24 @@
     width: 20px;
     height: 20px;
   }
-  .review .carousel-btn{ 
+
+  .review .carousel-btn {
     width: 45px;
     height: 27px;
+  }
 }
-}
+
 @media (max-width: 480px) {
- .js-copy-btn svg{
+  .js-copy-btn svg {
     width: 20px;
     height: 20px;
   }
 }
+
 @media (min-width:520px) {
-  #mobile-menu-overlay .nav-mobile-btn{
-    max-width:   300px !important;
-  
+  #mobile-menu-overlay .nav-mobile-btn {
+    max-width: 300px !important;
+
   }
 }
 

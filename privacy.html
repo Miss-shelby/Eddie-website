@@ -45,24 +45,21 @@
 <!-- min-h-screen mobile,sm:h-[120vh] min-h-[100svh] -->
 
 <body class="">
-    <header class="fixed top-0 mb-10 bg-white  w-full z-50 pt-4  ">
+    <header id="main-header" class="fixed top-0 mb-10 bg-white  w-full z-50 pt-4 transition-all duration-300">
         <div class="lg:max-w-[1500px] mx-auto px-4 lg:px-8 w-full  flex justify-between items-center text-white">
             <div class="flex items-center space-x-2 pointer-events-auto cursor-pointer">
                 <img class="object-contain h-[25px] lg:h-auto" src="./assets/LOGO-02 1.png" alt="logo image" />
             </div>
             <div class="flex items-center space-x-14">
-                <nav class="hidden text-brand-dark sm:flex items-center font-nunito space-x-12 pointer-events-auto">
-                    <a href="index.html"
-                        class="text-base font-medium text-brand-dark hover:text-brand-gold transition-colors relative group nav-link">
+                <nav class="hidden sm:flex items-center font-nunito space-x-12 pointer-events-auto">
+                    <a href="index.html" class="text-base font-medium transition-colors relative group nav-link">
                         Home
                         <span class="underline"></span>
                     </a>
-                    <a href="about.html"
-                        class="text-base font-medium relative text-brand-dark hover:text-brand-gold transition-colors nav-link">About
+                    <a href="about.html" class="text-base font-medium relative transition-colors nav-link">About
                         <span class="underline"></span>
                     </a>
-                    <a href="business.html"
-                        class="text-base font-medium relative text-brand-dark hover:text-brand-gold transition-colors nav-link">Businesses
+                    <a href="business.html" class="text-base font-medium relative transition-colors nav-link">Businesses
                         <span class="underline"></span>
                     </a>
                 </nav>
@@ -82,16 +79,15 @@
                     </a>
                 </div>
                 <!-- mobile toggle menu -->
-                    <div class="block cursor-pointer sm:hidden">
-                        <button id="mobile-menu-toggle" class="text-brand-dark">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                    d="M3.59998 18C3.59998 17.3372 4.13723 16.8 4.79998 16.8H19.2C19.8627 16.8 20.4 17.3372 20.4 18C20.4 18.6628 19.8627 19.2 19.2 19.2H4.79998C4.13723 19.2 3.59998 18.6628 3.59998 18ZM3.59998 6C3.59998 5.33725 4.13723 4.8 4.79998 4.8H19.2C19.8627 4.8 20.4 5.33725 20.4 6C20.4 6.66274 19.8627 7.2 19.2 7.2H4.79998C4.13723 7.2 3.59998 6.66274 3.59998 6ZM3.59998 12C3.59998 11.3373 4.13723 10.8 4.79998 10.8H12C12.6627 10.8 13.2 11.3373 13.2 12C13.2 12.6628 12.6627 13.2 12 13.2H4.79998C4.13723 13.2 3.59998 12.6628 3.59998 12Z"
-                                    fill="currentColor" />
-                            </svg>
-                        </button>
-                    </div>
+                <div class="block cursor-pointer sm:hidden">
+                    <button id="mobile-menu-toggle" class="text-brand-dark">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M3.59998 18C3.59998 17.3372 4.13723 16.8 4.79998 16.8H19.2C19.8627 16.8 20.4 17.3372 20.4 18C20.4 18.6628 19.8627 19.2 19.2 19.2H4.79998C4.13723 19.2 3.59998 18.6628 3.59998 18ZM3.59998 6C3.59998 5.33725 4.13723 4.8 4.79998 4.8H19.2C19.8627 4.8 20.4 5.33725 20.4 6C20.4 6.66274 19.8627 7.2 19.2 7.2H4.79998C4.13723 7.2 3.59998 6.66274 3.59998 6ZM3.59998 12C3.59998 11.3373 4.13723 10.8 4.79998 10.8H12C12.6627 10.8 13.2 11.3373 13.2 12C13.2 12.6628 12.6627 13.2 12 13.2H4.79998C4.13723 13.2 3.59998 12.6628 3.59998 12Z"
+                                fill="currentColor" />
+                        </svg>
+                    </button>
+                </div>
             </div>
         </div>
     </header>
@@ -123,7 +119,8 @@
     <!-- INFORMATION -->
     <section id="" class=" w-full  md:max-w-4xl lg:max-w-[1500px] mt-[80px] lg:mt-[120px] px-4 lg:px-8    mx-auto   ">
         <div class="flex flex-col gap-4 w-full xl:max-w-[1300px]">
-            <h2 class="text-[28px] text-left text-[#0F0B08]  md:text-[55px] font-serif xl:text-left   leading-[1.2]  tracking-tight">
+            <h2
+                class="text-[28px] text-left text-[#0F0B08]  md:text-[55px] font-serif xl:text-left   leading-[1.2]  tracking-tight">
                 <span class="font-nunito">1. </span> Information We Collect
             </h2>
             <p
@@ -140,20 +137,26 @@
     <!-- 2. How Your Information Is Used section -->
     <section id="" class=" w-full  md:max-w-4xl lg:max-w-[1500px] mt-[50px] lg:mt-[80px] px-4 lg:px-8    mx-auto   ">
         <div class="flex flex-col gap-4 w-full xl:max-w-[1300px]">
-            <h2 class="text-[28px] text-left text-[#0F0B08]   md:text-[55px] font-serif xl:text-left   leading-[1.2]  tracking-tight">
+            <h2
+                class="text-[28px] text-left text-[#0F0B08]   md:text-[55px] font-serif xl:text-left   leading-[1.2]  tracking-tight">
                 <span class="font-nunito">2. </span> How Your Information Is Used
             </h2>
             <p
                 class="text-brand-dark text-sm  md:text-xl font-nunito group-hover:text-brand-gold transition-colors duration-500 leading-[1.5]">
                 Information collected may be used to:</p>
             <ul class="list-disc ml-6">
-                <li class="text-brand-dark text-sm  md:text-xl font-nunito leading-[1.5]">Respond to inquiries or messages</li>
-                <li class="text-brand-dark text-sm  md:text-xl font-nunito leading-[1.5]">Communicate updates or relevant information</li>
-                <li class="text-brand-dark text-sm  md:text-xl font-nunito leading-[1.5]">Improve website functionality and content</li>
-                <li class="text-brand-dark text-sm  md:text-xl font-nunito leading-[1.5]">Maintain security and prevent misuse</li>
+                <li class="text-brand-dark text-sm  md:text-xl font-nunito leading-[1.5]">Respond to inquiries or
+                    messages</li>
+                <li class="text-brand-dark text-sm  md:text-xl font-nunito leading-[1.5]">Communicate updates or
+                    relevant information</li>
+                <li class="text-brand-dark text-sm  md:text-xl font-nunito leading-[1.5]">Improve website functionality
+                    and content</li>
+                <li class="text-brand-dark text-sm  md:text-xl font-nunito leading-[1.5]">Maintain security and prevent
+                    misuse</li>
             </ul>
-            <p
-                class="text-brand-dark text-sm  md:text-xl font-nunito leading-[1.5]">We do not sell, rent, or trade personal information to third parties. Any data shared is treated with confidentiality and used solely for the purposes outlined in this policy.</p>
+            <p class="text-brand-dark text-sm  md:text-xl font-nunito leading-[1.5]">We do not sell, rent, or trade
+                personal information to third parties. Any data shared is treated with confidentiality and used solely
+                for the purposes outlined in this policy.</p>
         </div>
 
     </section>
@@ -165,89 +168,89 @@
             <h2 class="text-[28px] text-left text-[#0F0B08]  md:text-[55px] font-serif xl:text-left   leading-[1.2] ">
                 <span class="font-nunito">3. </span> Cookies and Tracking Technologies
             </h2>
-            <p
-                class="text-brand-dark text-sm  md:text-xl font-nunito leading-[1.5]">
-               This website may use cookies and similar technologies to enhance user experience, analyze site traffic, and understand visitor behavior. You may choose to disable cookies through your browser settings..</p>
+            <p class="text-brand-dark text-sm  md:text-xl font-nunito leading-[1.5]">
+                This website may use cookies and similar technologies to enhance user experience, analyze site traffic,
+                and understand visitor behavior. You may choose to disable cookies through your browser settings..</p>
         </div>
 
     </section>
 
-     <!-- 4. Data Protection and Security section -->
+    <!-- 4. Data Protection and Security section -->
     <section id="" class=" w-full  md:max-w-4xl lg:max-w-[1500px] mt-[50px] lg:mt-[80px] px-4 lg:px-8    mx-auto   ">
         <div class="flex flex-col gap-4 w-full xl:max-w-[1300px]">
             <h2 class="text-[28px] text-left text-[#0F0B08]  md:text-[55px] font-serif xl:text-left   leading-[1.2] ">
                 <span class="font-nunito">4. </span> Data Protection and Security
             </h2>
-            <p
-                class="text-brand-dark text-sm  md:text-xl font-nunito leading-[1.5]">
-               Reasonable measures are taken to protect personal information against unauthorized access, alteration, or disclosure. However, no method of online transmission is entirely secure.</p>
+            <p class="text-brand-dark text-sm  md:text-xl font-nunito leading-[1.5]">
+                Reasonable measures are taken to protect personal information against unauthorized access, alteration,
+                or disclosure. However, no method of online transmission is entirely secure.</p>
         </div>
 
     </section>
 
     <!-- 5. Third-Party Links section -->
-     <section id="" class=" w-full  md:max-w-4xl lg:max-w-[1500px] mt-[50px] lg:mt-[80px] px-4 lg:px-8    mx-auto   ">
+    <section id="" class=" w-full  md:max-w-4xl lg:max-w-[1500px] mt-[50px] lg:mt-[80px] px-4 lg:px-8    mx-auto   ">
         <div class="flex flex-col gap-4 w-full xl:max-w-[1300px]">
             <h2 class="text-[28px] text-left text-[#0F0B08]  md:text-[55px] font-serif xl:text-left   leading-[1.2] ">
                 <span class="font-nunito">5. </span> Third-Party Links
             </h2>
-            <p
-                class="text-brand-dark text-sm  md:text-xl font-nunito leading-[1.5]">
-              This website may contain links to external sites. We are not responsible for the privacy practices or content of third-party websites.</p>
+            <p class="text-brand-dark text-sm  md:text-xl font-nunito leading-[1.5]">
+                This website may contain links to external sites. We are not responsible for the privacy practices or
+                content of third-party websites.</p>
         </div>
 
     </section>
 
-    
+
     <!-- 6. Your Rights section -->
-     <section id="" class=" w-full  md:max-w-4xl lg:max-w-[1500px] mt-[50px] lg:mt-[80px] px-4 lg:px-8    mx-auto   ">
+    <section id="" class=" w-full  md:max-w-4xl lg:max-w-[1500px] mt-[50px] lg:mt-[80px] px-4 lg:px-8    mx-auto   ">
         <div class="flex flex-col gap-4 w-full xl:max-w-[1300px]">
             <h2 class="text-[28px] text-left text-[#0F0B08]  md:text-[55px] font-serif xl:text-left   leading-[1.2] ">
                 <span class="font-nunito">6. </span> Your Rights
             </h2>
-            <p
-                class="text-brand-dark text-sm  md:text-xl font-nunito leading-[1.5]">
-             You have the right to request access to, correction of, or deletion of your personal information. Requests can be made through the contact information provided on this website.</p>
+            <p class="text-brand-dark text-sm  md:text-xl font-nunito leading-[1.5]">
+                You have the right to request access to, correction of, or deletion of your personal information.
+                Requests can be made through the contact information provided on this website.</p>
         </div>
 
     </section>
 
-      <!-- 7. Policy Updates section -->
-     <section id="" class=" w-full  md:max-w-4xl lg:max-w-[1500px] mt-[50px] lg:mt-[80px] px-4 lg:px-8    mx-auto   ">
+    <!-- 7. Policy Updates section -->
+    <section id="" class=" w-full  md:max-w-4xl lg:max-w-[1500px] mt-[50px] lg:mt-[80px] px-4 lg:px-8    mx-auto   ">
         <div class="flex flex-col gap-4 w-full xl:max-w-[1300px]">
             <h2 class="text-[28px] text-left text-[#0F0B08]  md:text-[55px] font-serif xl:text-left   leading-[1.2] ">
                 <span class="font-nunito">7. </span> Policy Updates
             </h2>
-            <p
-                class="text-brand-dark text-sm  md:text-xl font-nunito leading-[1.5]">
-           You have the right to request access to, correction of, or deletion of your personal information. Requests can be made through the contact information provided on this website.</p>
+            <p class="text-brand-dark text-sm  md:text-xl font-nunito leading-[1.5]">
+                You have the right to request access to, correction of, or deletion of your personal information.
+                Requests can be made through the contact information provided on this website.</p>
         </div>
 
     </section>
 
-       <!-- 8. Contact Information section -->
-     <section id="" class=" w-full  md:max-w-4xl lg:max-w-[1500px] pb-[80px] lg:pb-[120px] mt-[50px] lg:mt-[80px] px-4 lg:px-8    mx-auto   ">
+    <!-- 8. Contact Information section -->
+    <section id=""
+        class=" w-full  md:max-w-4xl lg:max-w-[1500px] pb-[80px] lg:pb-[120px] mt-[50px] lg:mt-[80px] px-4 lg:px-8    mx-auto   ">
         <div class="flex flex-col gap-4 w-full xl:max-w-[1300px]">
             <h2 class="text-[28px] text-left text-[#0F0B08]  md:text-[55px] font-serif xl:text-left   leading-[1.2] ">
                 <span class="font-nunito">8. </span> Contact Information
             </h2>
-            <p
-                class="text-brand-dark text-sm  md:text-xl font-nunito leading-[1.5]">
-           For questions or concerns regarding this Privacy Policy, please reach out through the contact page on this website.</p>
+            <p class="text-brand-dark text-sm  md:text-xl font-nunito leading-[1.5]">
+                For questions or concerns regarding this Privacy Policy, please reach out through the contact page on
+                this website.</p>
         </div>
 
     </section>
 
     <!-- FOOTER SECTION -->
     <footer class=" w-full bg-[#59291D]  rounded-tl-[20px] rounded-tr-[20px] ">
-        <div
-            class="w-full  text-white p-5 md:p-[30px] lg:max-w-[1500px] md:max-w-4xl mx-auto">
+        <div class="w-full  text-white p-5 md:p-[30px] lg:max-w-[1500px] md:max-w-4xl mx-auto">
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 xl:gap-24 ">
                 <!-- Left Column -->
                 <div class="lg:col-span-4 flex flex-col space-y-[15px] md:space-y-8">
                     <div class="flex items-start justify-between w-full md:flex-col">
                         <div class="w-1/3 md:w-full">
-                            <img class="object-contain h-[30px]" src="./assets/LOGO-02 1 copy.png" alt="logo image" />
+                            <img class="object-contain sm:h-[30px]" src="./assets/LOGO-02 1 copy.png" alt="logo image" />
                             <p
                                 class="text-white/75 pt-[14px] md:pt-6  text-xs sm:text-sm md:text-lg font-nunito leading-relaxed max-w-sm">
                                 Edwin Osagie Edemakhiota is a Nigerian entrepreneur, software developer, and business
@@ -266,7 +269,8 @@
                                     class="text-xs font-nunito hover:text-brand-gold transition-colors">Businesses</a>
                                 <a href="privacy.html"
                                     class="text-xs font-nunito hover:text-brand-gold transition-colors">Privacy</a>
-                                <a href="terms.html" class="text-xs font-nunito hover:text-brand-gold transition-colors">Terms of
+                                <a href="terms.html"
+                                    class="text-xs font-nunito hover:text-brand-gold transition-colors">Terms of
                                     Use</a>
                                 <a href="contact.html"
                                     class="text-xs font-nunito hover:text-brand-gold transition-colors">Contact</a>
@@ -291,11 +295,10 @@
                 <div class="lg:col-span-8 grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8 ">
                     <div class="md:col-span-2 ">
                         <h3 class="font-serif text-sm  md:text-2xl">Partner With Me</h3>
-                        <p
-                            class="text-white/75 pt-1 md:pt-6 text-xs max-w-[250px] md:text-lg font-nunito lg:max-w-sm">
+                        <p class="text-white/75 pt-1 md:pt-6 text-xs max-w-[250px] md:text-lg font-nunito lg:max-w-sm">
                             Kindly use the account numbers below to partner with Mr Edemakhiota</p>
                     </div>
- 
+
                     <!-- Account Name -->
                     <div class="space-y-2 max-w-[300px] sm:max-w-full sm:w-full">
                         <label class="text-white md:text-lg font-semibold text-sm font-nunito">Account Name</label>
@@ -400,7 +403,7 @@
         </div>
     </footer>
 
-     <!-- MOBILE NAVBAR OVERLAY -->
+    <!-- MOBILE NAVBAR OVERLAY -->
     <div id="mobile-menu-overlay"
         class="fixed inset-0 bg-[#F9F8F6] z-[100] transform translate-x-full transition-transform duration-500 ease-in-out md:hidden">
         <div class="flex flex-col h-full px-5 py-6">
@@ -421,19 +424,14 @@
 
             <!-- Navigation Links -->
             <nav class="flex flex-col space-y-4">
-                <a href="index.html"
-                    class="text-base font-nunito text-brand-dark hover:text-brand-gold transition-colors">Home</a>
-                <a href="about.html"
-                    class="text-base font-nunito text-brand-dark hover:text-brand-gold transition-colors">About</a>
-                <a href="#" class="text-base font-nunito text-brand-gold transition-colors">Businesses</a>
-                <a href="terms.html"
-                    class="text-base font-nunito text-brand-dark hover:text-brand-gold transition-colors">Terms
+                <a href="index.html" class="text-base font-nunito transition-colors nav-link">Home</a>
+                <a href="about.html" class="text-base font-nunito transition-colors nav-link">About</a>
+                <a href="business.html" class="text-base font-nunito transition-colors nav-link">Businesses</a>
+                <a href="terms.html" class="text-base font-nunito transition-colors nav-link">Terms
                     of Use</a>
-                <a href="privacy.html"
-                    class="text-base font-nunito text-brand-dark hover:text-brand-gold transition-colors">Privacy
+                <a href="privacy.html" class="text-base font-nunito transition-colors nav-link">Privacy
                     Policy</a>
-                <a href="contact.html"
-                    class="text-base font-nunito text-brand-dark hover:text-brand-gold transition-colors">Contact</a>
+                <a href="contact.html" class="text-base font-nunito transition-colors nav-link">Contact</a>
             </nav>
 
             <!-- Bottom Action Button -->
@@ -443,8 +441,10 @@
                     <span class="text-base">Partner with me</span>
                     <div class="w-8 h-8 bg-white text-brand-dark rounded-full flex items-center justify-center">
                         <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M7.15785 2.43857L1.01 8.58643L0 7.57643L6.14714 1.42857L0.729286 1.42857L0.729286 0L8.58642 0V7.85714L7.15785 7.85714V2.43857Z" fill="#0F0B08"/>
-                            </svg>
+                            <path
+                                d="M7.15785 2.43857L1.01 8.58643L0 7.57643L6.14714 1.42857L0.729286 1.42857L0.729286 0L8.58642 0V7.85714L7.15785 7.85714V2.43857Z"
+                                fill="#0F0B08" />
+                        </svg>
                     </div>
                 </button>
             </div>
