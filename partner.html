@@ -4,21 +4,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mr. Edemakhiota |About</title>
+    <title>Mr. Edemakhiota | Contact</title>
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css">
-    <!-- Google Fonts: Playfair Display for Serif, Inter for Sans -->
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Inter:wght@300;400;500;600&display=swap"
         rel="stylesheet">
     <link
-        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Inter:wght@300;400;500;600&family=Nunito+Sans:wght@400;600;700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Inter:wght@300;400;500;600&family=Nunito+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap"
         rel="stylesheet">
 
-    <!-- Optional: add your custom colors -->
+    <!-- Tailwind Configuration -->
     <script>
         tailwind.config = {
             theme: {
@@ -41,14 +41,22 @@
             }
         }
     </script>
+    <style>
+        .custom-radio:checked {
+            background-color: #B48B78;
+            border-color: #B48B78;
+        }
+    </style>
 </head>
-<!-- min-h-screen mobile,sm:h-[120vh] min-h-[100svh] -->
 
-<body class="">
-    <header class="fixed top-0 mb-10 bg-white  w-full z-50 pt-4  ">
-        <div class="lg:max-w-[1500px] mx-auto px-4 lg:px-8 w-full  flex justify-between items-center text-white">
+<body class="bg-white">
+    <!-- NAVIGATION HEADER -->
+    <header class="fixed top-0 mb-10 bg-white w-full z-50 pt-4">
+        <div class="lg:max-w-[1500px] mx-auto px-4 lg:px-8 w-full flex justify-between items-center text-white">
             <div class="flex items-center space-x-2 pointer-events-auto cursor-pointer">
-                <img class="object-contain h-[25px] lg:h-auto" src="./assets/LOGO-02 1.png" alt="logo image" />
+                <a href="index.html">
+                    <img class="object-contain h-[25px] lg:h-auto" src="./assets/LOGO-02 1.png" alt="logo image" />
+                </a>
             </div>
             <div class="flex items-center space-x-14">
                 <nav class="hidden text-brand-dark sm:flex items-center font-nunito space-x-12 pointer-events-auto">
@@ -58,19 +66,21 @@
                         <span class="underline"></span>
                     </a>
                     <a href="about.html"
-                        class="text-base font-medium relative text-brand-dark hover:text-brand-gold transition-colors nav-link">About
+                        class="text-base font-medium relative text-brand-dark hover:text-brand-gold transition-colors nav-link">
+                        About
                         <span class="underline"></span>
                     </a>
-                    <a href="#"
-                        class="text-base font-medium relative text-brand-dark hover:text-brand-gold transition-colors nav-link">Businesses
+                    <a href="business.html"
+                        class="text-base font-medium relative text-brand-dark hover:text-brand-gold transition-colors nav-link">
+                        Businesses
                         <span class="underline"></span>
                     </a>
                 </nav>
 
                 <div class="hidden sm:block">
-                    <a href="partner.html"
-                        class="bg-brand-gold text-white font-nunito px-4 py-3 text-sm rounded-full flex items-center space-x-3 transition-all">
-                        <span>Partner with me</span>
+                    <button
+                        class="bg-brand-gold text-white font-nunito px-4 py-3 text-sm rounded-full flex items-center space-x-3 transition-all hover:opacity-90">
+                        <a href="partner.html">Partner with me</a>
                         <div class="w-6 h-6 bg-white text-brand-dark p-1 rounded-full flex items-center justify-center">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
                                 fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
@@ -79,9 +89,9 @@
                                 <polyline points="7 7 17 7 17 17"></polyline>
                             </svg>
                         </div>
-                    </a>
+                    </button>
                 </div>
-                  <!-- mobile toggle menu -->
+              <!-- mobile toggle menu -->
                     <div class="block cursor-pointer sm:hidden">
                         <button id="mobile-menu-toggle" class="text-brand-dark">
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -96,132 +106,161 @@
         </div>
     </header>
 
-
-    <!-- HERO SECTION -->
-    <section id="" class=" w-full  md:max-w-4xl lg:max-w-[1500px] mt-20 lg:mt-28 px-4 lg:px-8    mx-auto   ">
-        <div class="flex flex-col gap-4 w-full xl:max-w-[1300px]">
-            <h2 class="text-4xl text-left  z-10 md:text-[70px] font-serif xl:text-left   leading-[1.2]  tracking-tight">
-               TERMS OF USE</h2>
-            <p
-                class="text-[#332D2B] text-sm  md:text-lg font-nunito group-hover:text-brand-gold transition-colors duration-500 leading-[1.5]">
-                Last Updated: 12 Jan, 2026.</p>
-            <p
-                class="text-brand-dark text-sm  md:text-[22px] font-nunito group-hover:text-brand-gold transition-colors duration-500 leading-[1.5]">
-               Welcome to the Mr Edemakhiota website. These Terms of Use govern your access to and use of this website and its content. By accessing or using this site, you agree to be bound by these terms. If you do not agree, please discontinue use of the website.</p>
-            <p
-                class="text-brand-dark text-sm  md:text-[22px] font-nunito group-hover:text-brand-gold transition-colors duration-500 leading-[1.5]">
-                This website is provided for informational and general communication purposes only.</p>
+    <!-- HERO MAIN SECTION -->
+    <section class="lg:max-w-[1500px] md:max-w-4xl  mx-auto px-4 lg:px-8  mt-20 lg:mt-28 ">
+        <!-- LEFT COLUMN: FORM -->
+        <div class="flex flex-col gap-8 md:flex-row lg:gap-8 w-full md:items-center justify-between">
+            <div>
+                <p class="text-[#E3C9AC] font-semibold text-xs md:text-2xl font-nunito mb-2">Purpose-driven Partnership
+                </p>
+                <h1
+                    class="text-4xl text-left md:text-[70px] md:max-w-sm lg:max-w-full font-serif leading-[1.1] tracking-tight text-[#0F0B08] mb-4 md:mb-6">
+                    Partner With Mr Edemakhiota
+                </h1>
+                <p class="text-brand-dark text-sm md:text-xl font-nunito leading-[1.6] max-w-2xl">
+                    Partnership, to me, is about shared belief, trust, and long-term impact. Whether through financial
+                    support or strategic collaboration, every partnership helps strengthen the vision and extend its
+                    reach.
+                </p>
+            </div>
+            <div class="w-full md:w-fit">
+                <img class="w-full  object-cover rounded-xl" src="./assets/Group 11 (1).png" alt="" srcset="">
+            </div>
         </div>
 
     </section>
 
-    <!-- TERMS -->
-    <section id="" class=" w-full  md:max-w-4xl lg:max-w-[1500px] mt-[80px] lg:mt-[120px] px-4 lg:px-8    mx-auto   ">
-        <div class="flex flex-col gap-4 w-full xl:max-w-[1300px]">
-            <h2 class="text-[28px] text-left text-[#0F0B08]  md:text-[55px] font-serif xl:text-left   leading-[1.2]  tracking-tight">
-                <span class="font-nunito">1. </span> Use of Website
-            </h2>
-            <p
-                class="text-brand-dark text-sm  md:text-xl font-nunito  leading-[1.5]">
-               You may use this website for lawful purposes and in a manner that does not infringe on the rights of others or restrict their use of the site. Unauthorized use, misuse, or interference with the website’s functionality is prohibited.</p>
-          
+    <!-- FINANCIAL SUPPORT      -->
+    <section class="lg:max-w-[1500px] md:max-w-4xl pt-[80px]  mx-auto px-4 lg:px-8  lg:pt-[100px]">
+        <div class="flex  gap-6 w-full items-start md:items-center justify-between">
+            <div class="w-1/2 lg:w-full lg:max-w-3xl">
+                <p class="text-[#B48B78] font-semibold text-xs md:text-2xl font-nunito mb-2">Financial Partnership</p>
+                <h1 class="text-[22px] text-left md:text-5xl font-serif leading-[26px]  text-[#0F0B08] mb-4 md:mb-6">
+                    Supporting the Vision <span class="lg:block">Through Partnership.</span>
+                </h1>
+
+            </div>
+            <div class="w-1/2 lg:w-full ">
+                <p class="text-brand-dark text-sm md:text-2xl font-nunito leading-[1.6]">
+                    Financial partnership is an avenue for individuals who believe in my work, values, and long-term
+                    vision to partner through direct financial support. These contributions help sustain ongoing
+                    projects, support expansion, and strengthen the structures behind the work being done.
+                </p>
+            </div>
         </div>
+        <div class="flex w-full flex-col md:flex-row mt-6   gap-6 lg:mt-12 lg:gap-[22px] justify-between items-center">
+            <div class="space-y-2 w-full">
+                <label class="text-[#0F0B08] md:text-xl font-semibold text-sm font-nunito">Account Name</label>
+                <div class="relative group">
+                    <div id="copy-name"
+                        class="w-full bg-[#A0A0A033] font-medium text-sm text-[#0F0B08] py-5 px-[10px] md:px-5 rounded-[12px] font-nunito md:text-xl pr-12">
+                        Edema Osagie Edwin
+                    </div>
+                    <button
+                        class="absolute right-4 top-1/2 -translate-y-1/2 text-brand-darkSecondary hover:text-brand-gold transition-colors js-copy-btn"
+                        data-target="copy-name">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M7 3C7 1.89542 7.89544 0.999992 9.00001 1L21 1.00009C22.1046 1.00009 23 1.89552 23 3.00009V15C23 16.1046 22.1046 17 21 17H20C19.4477 17 19 16.5523 19 16V8.50004C19 6.56705 17.433 5.00004 15.5 5.00004H8C7.44771 5.00004 7 4.55233 7 4.00004V3ZM1 9.00017C1 7.8956 1.89543 7.00017 3 7.00017L15 7.00019C16.1046 7.00019 17 7.89562 17 9.00019V21.0001C17 22.1047 16.1046 23.0001 15 23.0001H3C1.89543 23.0001 1 22.1047 1 21.0001V9.00017Z"
+                                fill="#0F0B08" />
+                        </svg>
 
-    </section>
-    <!-- 2. Intellectual Property section -->
-    <section id="" class=" w-full  md:max-w-4xl lg:max-w-[1500px] mt-[50px] lg:mt-[80px] px-4 lg:px-8    mx-auto   ">
-        <div class="flex flex-col gap-4 w-full xl:max-w-[1300px]">
-            <h2 class="text-[28px] text-left text-[#0F0B08]   md:text-[55px] font-serif xl:text-left   leading-[1.2]  tracking-tight">
-                <span class="font-nunito">2. </span> Intellectual Property
-            </h2>
-            <p
-                class="text-brand-dark text-sm  md:text-xl font-nunito  leading-[1.5]">
-                All content on this website—including text, images, logos, graphics, and design elements—is the property of Mr Edemakhiota unless otherwise stated. Content may not be copied, reproduced, distributed, or used for commercial purposes without prior written permission.</p>
+                    </button>
+                </div>
+            </div>
+            <div class="space-y-2 w-full ">
+                <label class="text-[#0F0B08] md:text-xl font-semibold text-sm font-nunito">Bank Name</label>
+                <div class="relative group">
+                    <div id="copy-name"
+                        class="w-full bg-[#A0A0A033] font-medium text-sm text-[#0F0B08] px-5 py-5 rounded-[12px] font-nunito md:text-xl pr-12">
+                        United Bank for Nigeria
+                    </div>
+                    <button
+                        class="absolute right-4 top-1/2 -translate-y-1/2 text-brand-darkSecondary hover:text-brand-gold transition-colors js-copy-btn"
+                        data-target="copy-name">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M7 3C7 1.89542 7.89544 0.999992 9.00001 1L21 1.00009C22.1046 1.00009 23 1.89552 23 3.00009V15C23 16.1046 22.1046 17 21 17H20C19.4477 17 19 16.5523 19 16V8.50004C19 6.56705 17.433 5.00004 15.5 5.00004H8C7.44771 5.00004 7 4.55233 7 4.00004V3ZM1 9.00017C1 7.8956 1.89543 7.00017 3 7.00017L15 7.00019C16.1046 7.00019 17 7.89562 17 9.00019V21.0001C17 22.1047 16.1046 23.0001 15 23.0001H3C1.89543 23.0001 1 22.1047 1 21.0001V9.00017Z"
+                                fill="#0F0B08" />
+                        </svg>
+
+                    </button>
+                </div>
+            </div>
         </div>
+        <div class="space-y-2 w-full mt-6 lg:mt-10">
+            <label class="text-[#0F0B08] md:text-xl font-semibold text-sm font-nunito">Account Number</label>
+            <div class="relative group">
+                <div id="copy-name"
+                    class="w-full bg-[#A0A0A033] font-medium text-sm text-[#0F0B08] px-5 py-5 rounded-[12px] font-nunito md:text-xl pr-12">
+                    2064292100
+                </div>
+                <button
+                    class="absolute right-4 top-1/2 -translate-y-1/2 text-brand-darkSecondary hover:text-brand-gold transition-colors js-copy-btn"
+                    data-target="copy-name">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M7 3C7 1.89542 7.89544 0.999992 9.00001 1L21 1.00009C22.1046 1.00009 23 1.89552 23 3.00009V15C23 16.1046 22.1046 17 21 17H20C19.4477 17 19 16.5523 19 16V8.50004C19 6.56705 17.433 5.00004 15.5 5.00004H8C7.44771 5.00004 7 4.55233 7 4.00004V3ZM1 9.00017C1 7.8956 1.89543 7.00017 3 7.00017L15 7.00019C16.1046 7.00019 17 7.89562 17 9.00019V21.0001C17 22.1047 16.1046 23.0001 15 23.0001H3C1.89543 23.0001 1 22.1047 1 21.0001V9.00017Z"
+                            fill="#0F0B08" />
+                    </svg>
 
-    </section>
-
-
-    <!-- 3. Content Accuracy -->
-    <section id="" class=" w-full  md:max-w-4xl lg:max-w-[1500px] mt-[50px] lg:mt-[80px] px-4 lg:px-8    mx-auto   ">
-        <div class="flex flex-col gap-4 w-full xl:max-w-[1300px]">
-            <h2 class="text-[28px] text-left text-[#0F0B08]  md:text-[55px] font-serif xl:text-left   leading-[1.2] ">
-                <span class="font-nunito">3. </span> Content Accuracy
-            </h2>
-            <p
-                class="text-brand-dark text-sm  md:text-xl font-nunito leading-[1.5]">
-               While reasonable efforts are made to ensure that information on this website is accurate and up to date, no guarantees are made regarding completeness or accuracy. Content may be updated, modified, or removed at any time without notice.</p>
-        </div>
-
-    </section>
-
-     <!-- 4. External Links section -->
-    <section id="" class=" w-full  md:max-w-4xl lg:max-w-[1500px] mt-[50px] lg:mt-[80px] px-4 lg:px-8    mx-auto   ">
-        <div class="flex flex-col gap-4 w-full xl:max-w-[1300px]">
-            <h2 class="text-[28px] text-left text-[#0F0B08]  md:text-[55px] font-serif xl:text-left   leading-[1.2] ">
-                <span class="font-nunito">4. </span> External Links
-            </h2>
-            <p
-                class="text-brand-dark text-sm  md:text-xl font-nunito leading-[1.5]">
-              This website may include links to third-party websites for convenience or reference. Mr Edemakhiota is not responsible for the content, availability, or practices of external sites.</p>
-        </div>
-
-    </section>
-
-    <!-- 5. Limitation of Liability section -->
-     <section id="" class=" w-full  md:max-w-4xl lg:max-w-[1500px] mt-[50px] lg:mt-[80px] px-4 lg:px-8    mx-auto   ">
-        <div class="flex flex-col gap-4 w-full xl:max-w-[1300px]">
-            <h2 class="text-[28px] text-left text-[#0F0B08]  md:text-[55px] font-serif xl:text-left   leading-[1.2] ">
-                <span class="font-nunito">5. </span> Limitation of Liability
-            </h2>
-            <p
-                class="text-brand-dark text-sm  md:text-xl font-nunito leading-[1.5]">
-              Use of this website is at your own risk. Mr Edemakhiota shall not be liable for any direct, indirect, incidental, or consequential damages arising from your use of or inability to use the website.</p>
-        </div>
-
-    </section>
-
-    
-    <!-- 6. Privacy section -->
-     <section id="" class=" w-full  md:max-w-4xl lg:max-w-[1500px] mt-[50px] lg:mt-[80px] px-4 lg:px-8    mx-auto   ">
-        <div class="flex flex-col gap-4 w-full xl:max-w-[1300px]">
-            <h2 class="text-[28px] text-left text-[#0F0B08]  md:text-[55px] font-serif xl:text-left   leading-[1.2] ">
-                <span class="font-nunito">6. </span>Privacy
-            </h2>
-            <p
-                class="text-brand-dark text-sm  md:text-xl font-nunito leading-[1.5]">
-            Your use of this website is also governed by the Privacy Policy, which outlines how personal information is collected and handled.</p>
-        </div>
-
-    </section>
-
-      <!-- 7. Changes to Terms section -->
-     <section id="" class=" w-full  md:max-w-4xl lg:max-w-[1500px] mt-[50px] lg:mt-[80px] px-4 lg:px-8    mx-auto   ">
-        <div class="flex flex-col gap-4 w-full xl:max-w-[1300px]">
-            <h2 class="text-[28px] text-left text-[#0F0B08]  md:text-[55px] font-serif xl:text-left   leading-[1.2] ">
-                <span class="font-nunito">7. </span> Changes to Terms
-            </h2>
-            <p
-                class="text-brand-dark text-sm  md:text-xl font-nunito leading-[1.5]">
-         These Terms of Use may be updated periodically. Continued use of the website after changes are posted constitutes acceptance of the updated terms.</p>
+                </button>
+            </div>
         </div>
 
     </section>
 
-       <!-- 8. Governing Law section -->
-     <section id="" class=" w-full  md:max-w-4xl lg:max-w-[1500px] pb-[80px] lg:pb-[120px] mt-[50px] lg:mt-[80px] px-4 lg:px-8    mx-auto   ">
-        <div class="flex flex-col gap-4 w-full xl:max-w-[1300px]">
-            <h2 class="text-[28px] text-left text-[#0F0B08]  md:text-[55px] font-serif xl:text-left   leading-[1.2] ">
-                <span class="font-nunito">8. </span> Governing Law
-            </h2>
-            <p
-                class="text-brand-dark text-sm  md:text-xl font-nunito leading-[1.5]">
-          These terms shall be governed by and interpreted in accordance with the laws of the Federal Republic of Nigeria.</p>
+
+    <!-- Business Partnership    -->
+    <section class="lg:max-w-[1500px] md:max-w-4xl  mx-auto px-4 lg:px-8 my-[80px] lg:my-[100px]">
+        <div class="flex  gap-6 w-full items-start md:items-center justify-between">
+            <div class="w-1/2 lg:w-full lg:max-w-3xl">
+                <p class="text-[#B48B78] font-semibold text-xs md:text-2xl font-nunito mb-2">Business Partnership</p>
+                <h1 class="text-[22px] leading-[26px] text-left md:text-5xl font-serif  text-[#0F0B08] mb-4 md:mb-6">
+                    Building Together <span class="lg:block">Through Collaboration.</span>
+                </h1>
+
+            </div>
+            <div class="w-1/2 lg:w-full ">
+                <p class="text-brand-dark text-sm md:text-2xl font-nunito leading-[1.6]">
+                    For individuals, brands, or organizations interested in strategic business partnerships,
+                    collaborations, or investment opportunities, I welcome structured conversations focused on mutual
+                    growth and long-term value creation.
+                </p>
+                <p class="text-brand-dark text-sm md:text-2xl pt-6 font-nunito font-bold leading-[1.6]">
+                    All business partnership inquiries can be made via the email below.
+                </p>
+            </div>
+        </div>
+        <div class=" w-full space-y-4 mt-6 lg:mt-12">
+            <label class="text-[#0F0B08] md:text-xl font-semibold text-sm font-nunito">Contact Method</label>
+            <div class="relative group">
+                <div id="copy-name"
+                    class="w-full bg-[#A0A0A033] font-medium text-sm text-[#0F0B08] py-5 px-[10px] md:px-5 rounded-[12px] font-nunito md:text-xl pr-12">
+                    admin@mredemakhiota.com
+                </div>
+                <button
+                    class="absolute right-4 top-1/2 -translate-y-1/2 text-brand-darkSecondary hover:text-brand-gold transition-colors js-copy-btn"
+                    data-target="copy-name">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M7 3C7 1.89542 7.89544 0.999992 9.00001 1L21 1.00009C22.1046 1.00009 23 1.89552 23 3.00009V15C23 16.1046 22.1046 17 21 17H20C19.4477 17 19 16.5523 19 16V8.50004C19 6.56705 17.433 5.00004 15.5 5.00004H8C7.44771 5.00004 7 4.55233 7 4.00004V3ZM1 9.00017C1 7.8956 1.89543 7.00017 3 7.00017L15 7.00019C16.1046 7.00019 17 7.89562 17 9.00019V21.0001C17 22.1047 16.1046 23.0001 15 23.0001H3C1.89543 23.0001 1 22.1047 1 21.0001V9.00017Z"
+                            fill="#0F0B08" />
+                    </svg>
+
+                </button>
+            </div>
+            <p class="text-[#332D2B]  w-full text-sm md:text-xl italic leading-[1.6]">
+                Kindly include your name, organization (if applicable), and a brief summary of your proposal.
+            </p>
         </div>
 
     </section>
 
-     <!-- FOOTER SECTION -->
+
+
+
+  <!-- FOOTER SECTION -->
     <footer class=" w-full bg-[#59291D]  rounded-tl-[20px] rounded-tr-[20px] ">
         <div
             class="w-full  text-white p-5 md:p-[30px] lg:max-w-[1500px] md:max-w-4xl mx-auto">
@@ -382,7 +421,8 @@
             </div>
         </div>
     </footer>
-      <!-- MOBILE NAVBAR OVERLAY -->
+
+    <!-- MOBILE NAVBAR OVERLAY -->
     <div id="mobile-menu-overlay"
         class="fixed inset-0 bg-[#F9F8F6] z-[100] transform translate-x-full transition-transform duration-500 ease-in-out md:hidden">
         <div class="flex flex-col h-full px-5 py-6">
