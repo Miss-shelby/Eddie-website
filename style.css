@@ -161,6 +161,9 @@ header.header-scrolled #mobile-menu-toggle {
 
 .carousel-item {
   position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
   opacity: 0;
   visibility: hidden;
   transition: opacity 1s cubic-bezier(0.4, 0, 0.2, 1), visibility 1s cubic-bezier(0.4, 0, 0.2, 1);
@@ -246,6 +249,7 @@ header.header-scrolled #mobile-menu-toggle {
   font-size: 0.9rem;
   color: #332D2B;
   opacity: 0;
+  font-weight: 800;
   transform: translateY(5px);
   transition: all 0.6s ease;
   text-align: left;
@@ -399,21 +403,23 @@ header.header-scrolled #mobile-menu-toggle {
   .rotating-svg text {
     font-size: 10px;
   }
- 
+
+}
+
+@media (max-width: 1000px) {
+  .contact-img {
+    max-height: 1240px !important;
+  }
+}
+
+@media (max-width: 780px) {
+  .contact-img {
+    max-height: 700px !important;
+  }
 }
 
 @media (max-width: 480px) {
-  .contact-img{
-   max-height: 550px !important; 
-  }
-}
-@media (max-width: 780px) {
-  .contact-img{
-   max-height: 700px !important; 
-  }
-}
-@media (max-width:1000px) {
-   .contact-img{
-   max-height: 1240px !important;
+  .contact-img {
+    max-height: 550px !important;
   }
 }
