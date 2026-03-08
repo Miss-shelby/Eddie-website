@@ -50,7 +50,7 @@
         <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-transparent z-0"></div>
         <!-- <div class="hidden lg:block absolute inset-0 lg:bg-gradient-to-t lg:from-black/70 lg:via-black/50 lg:to-black/20"></div> -->
         <!-- Header / Navigation -->
-        <header id="main-header" class="fixed top-0 w-full z-50 pt-4 transition-all duration-300">
+        <header id="main-header" class="fixed top-0 w-full z-50 py-4 transition-all duration-300">
             <div class="lg:max-w-[1500px] mx-auto px-4 lg:px-8 w-full  flex justify-between items-center text-white">
                 <div class="flex items-center space-x-2 pointer-events-auto cursor-pointer">
                     <img class="object-contain h-[25px] lg:h-auto" src="./assets/LOGO-02 1.png" alt="logo image" />
@@ -180,15 +180,25 @@
 
             </div>
         </div>
-        <div class="grid grid-cols-1 items-center justify-center md:grid-cols-3 lg:grid-cols-3 gap-5 pt-[30px]">
-            <div class="w-full">
-                <img class="w-full" src="./assets/Component 1 (2).png" alt="">
+        <div
+            class="grid grid-cols-1 items-center justify-center md:grid-cols-3 lg:grid-cols-3 lg:items-stretch h-full gap-8 pt-[30px]">
+            <div class="w-full h-full image-hover-wrapper">
+                <div class="image-hover-container h-full">
+                    <img class="w-full h-full image-hover-effect" src="./assets/eddie-suit-two.png" alt="">
+                </div>
+                <div class="image-caption-below">A visionary leader</div>
             </div>
-            <div class="w-full">
-                <img class="w-full" src="./assets/Component 1 (3).png" alt="">
+            <div class="w-full h-full image-hover-wrapper">
+                <div class="image-hover-container h-full">
+                    <img class="w-full h-full image-hover-effect" src="./assets/eddie-native.png" alt="">
+                </div>
+                <div class="image-caption-below">Business Excellence</div>
             </div>
-            <div class="w-full">
-                <img class="w-full" src="./assets/Frame 18.png" alt="">
+            <div class="w-full h-full image-hover-wrapper">
+                <div class="image-hover-container h-full">
+                    <img class="w-full h-full image-hover-effect" src="./assets/eddie-suit-one.PNG" alt="">
+                </div>
+                <div class="image-caption-below">Cultural Legacy</div>
             </div>
         </div>
     </section>
@@ -214,28 +224,21 @@
                 </div>
             </div>
 
-            <!-- Carousel Area min-h-[400px] lg:min-h-[600px] -->
-            <div class="js-carousel relative flex items-center justify-center   lg:px-20 w-full">
-                <!-- Background Text -->
-                <div class="absolute inset-0 flex items-center justify-center overflow-hidden">
-                    <span class="fashion-bg-text font-serif ">Fashion</span>
-                </div>
-
+            <!-- Carousel Area -->
+            <div class="js-carousel fashion-carousel relative w-full ">
                 <!-- Navigation Buttons -->
                 <div
-                    class="absolute inset-x-0 top-1/2 -translate-y-1/2 flex justify-between  md:px-10 items-center lg:px-20  z-20 pointer-events-none">
+                    class="absolute inset-x-0 top-1/4 -translate-y-1/2 flex justify-between md:px-10 items-center lg:px-20 z-20 pointer-events-none">
                     <button
-                        class="carousel-btn inactive prev-btn  pointer-events-auto bg-white/80 backdrop-blur-sm group">
+                        class="carousel-btn inactive prev-btn pointer-events-auto bg-white/80 backdrop-blur-sm group">
                         <svg width="40" height="35" viewBox="0 0 40 35" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" clip-rule="evenodd"
                                 d="M19.2677 0.73224C18.2915 -0.24408 16.7085 -0.24408 15.7322 0.73224L0.732216 15.7322C-0.244102 16.7086 -0.244102 18.2915 0.732216 19.2678L15.7322 34.2678C16.7085 35.2441 18.2915 35.2441 19.2677 34.2678C20.244 33.2915 20.244 31.7086 19.2677 30.7322L8.53552 20H37.5C38.8807 20 40 18.8807 40 17.5C40 16.1193 38.8807 15 37.5 15H8.53552L19.2677 4.2678C20.244 3.29148 20.244 1.70856 19.2677 0.73224Z"
                                 fill="#332D2B" />
                         </svg>
-
-
                     </button>
                     <button
-                        class="carousel-btn    inactive  next-btn pointer-events-auto bg-white/80 backdrop-blur-sm group">
+                        class="carousel-btn inactive next-btn pointer-events-auto bg-white/80 backdrop-blur-sm group">
                         <svg width="40" height="35" viewBox="0 0 40 35" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" clip-rule="evenodd"
                                 d="M20.7323 0.73224C21.7085 -0.24408 23.2915 -0.24408 24.2678 0.73224L39.2678 15.7322C40.2441 16.7086 40.2441 18.2915 39.2678 19.2678L24.2678 34.2678C23.2915 35.2441 21.7085 35.2441 20.7323 34.2678C19.756 33.2915 19.756 31.7086 20.7323 30.7322L31.4645 20H2.50002C1.1193 20 0 18.8807 0 17.5C0 16.1193 1.1193 15 2.50002 15H31.4645L20.7323 4.2678C19.756 3.29148 19.756 1.70856 20.7323 0.73224Z"
@@ -244,28 +247,86 @@
                     </button>
                 </div>
 
-                <!-- Product Image Carousel -->
-                <div class="fashion-image-container relative">
-                    <img src="./assets/brown-classic-loafers-with-tassels-stand-wooden-stand 1.png"
-                        alt="His Fashion - Slide 1"
-                        class="carousel-item active w-full max-h-[168px] md:max-h-full h-auto max-w-[500px]">
-                    <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=1000&auto=format&fit=crop"
-                        alt="His Fashion - Slide 2"
-                        class="carousel-item w-full max-h-[168px] md:max-h-full h-auto max-w-[500px]">
-                    <img src="https://images.unsplash.com/photo-1549298916-b41d501d3772?q=80&w=1000&auto=format&fit=crop"
-                        alt="His Fashion - Slide 3"
-                        class="carousel-item w-full max-h-[168px] md:max-h-full h-auto max-w-[500px]">
-                </div>
-            </div>
+                <div class="relative">
+                    <!-- Slide 1 -->
+                    <div class="carousel-item active">
+                        <!-- Image Container with Background Text -->
+                        <div class="relative flex items-center justify-center lg:px-20 w-full mb-10 md:mb-16">
+                            <div class="absolute inset-0 flex items-center justify-center overflow-hidden">
+                                <span class="fashion-bg-text font-serif">Fashion</span>
+                            </div>
+                            <div class="fashion-image-container relative">
+                                <img src="./assets/brown-classic-loafers-with-tassels-stand-wooden-stand 1.png"
+                                    alt="His Fashion - Slide 1"
+                                    class="w-full carousel-img max-h-[168px] md:max-h-full h-auto max-w-[500px] ">
+                            </div>
+                        </div>
+                        <!-- Footer Row -->
+                        <div class="lg:max-w-6xl mx-auto text-center">
+                            <h3 class="text-[22px] md:text-5xl font-serif text-[#0F0B08] font-normal mb-2 md:mb-4">His
+                                Fashion</h3>
+                            <p class="text-brand-dark text-sm md:text-2xl font-nunito leading-relaxed">
+                                Mr Edemakhiota's fashion sense is a reflection of confidence and self-awareness. His
+                                style is clean,
+                                expressive, and rooted in individuality — blending modern aesthetics with personal
+                                discipline. For
+                                him, fashion is not trend-driven; it is a statement of presence.
+                            </p>
+                        </div>
 
-            <!-- Footer Row -->
-            <div class="lg:max-w-6xl mx-auto text-center">
-                <h3 class="text-[22px] md:text-5xl font-serif text-[#0F0B08] font-normal mb-2 md:mb-4">His Fashion</h3>
-                <p class="text-brand-dark text-sm  md:text-2xl font-nunito leading-relaxed">
-                    Mr Edemakhiota's fashion sense is a reflection of confidence and self-awareness. His style is clean,
-                    expressive, and rooted in individuality — blending modern aesthetics with personal discipline. For
-                    him, fashion is not trend-driven; it is a statement of presence.
-                </p>
+                    </div>
+
+                    <!-- Slide 2 -->
+                    <div class="carousel-item">
+                        <!-- Image Container with Background Text -->
+                        <div class="relative flex items-center justify-center lg:px-20 w-full mb-10 md:mb-16">
+                            <div class="absolute inset-0 flex items-center justify-center overflow-hidden">
+                                <span class="fashion-bg-text font-serif">Culture</span>
+                            </div>
+                            <div class="fashion-image-container relative">
+                                <img src="./assets/big-african-mask 1.png" alt="His fashion - Slide 2"
+                                    class="w-full carousel-img max-h-[168px] md:max-h-full h-auto max-w-[500px]">
+                            </div>
+                        </div>
+                        <!-- Footer Row -->
+                        <div class="lg:max-w-6xl mx-auto text-center">
+                            <h3 class="text-[22px] md:text-5xl font-serif text-[#0F0B08] font-normal mb-2 md:mb-4">
+                                His Culture</h3>
+                            <p class="text-brand-dark text-sm md:text-2xl font-nunito leading-relaxed">
+                                Deeply rooted in his Benin heritage, Mr Edemakhiota carries his culture with pride and
+                                responsibility. His values, worldview, and leadership style are shaped by tradition,
+                                respect, and community — reminding him where he comes from as he builds where he is
+                                going.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Slide 3 -->
+                    <div class="carousel-item">
+                        <!-- Image Container with Background Text -->
+                        <div class="relative flex items-center justify-center lg:px-20 w-full mb-10 md:mb-16">
+                            <div class="absolute inset-0 flex items-center justify-center overflow-hidden">
+                                <span class="fashion-bg-text font-serif">Craft</span>
+                            </div>
+                            <div class="fashion-image-container relative">
+                                <img src="./assets/fountain-pen-beautiful-black-gold-fountain-pen-positioned-dark-background-selective-focus 1.png"
+                                    alt="His fashion - Slide 2"
+                                    class="w-full carousel-img max-h-[168px] md:max-h-full h-auto max-w-[500px]">
+                            </div>
+                        </div>
+                        <!-- Footer Row -->
+                        <div class="lg:max-w-6xl mx-auto text-center">
+                            <h3 class="text-[22px] md:text-5xl font-serif text-[#0F0B08] font-normal mb-2 md:mb-4">
+                                His Craft </h3>
+                            <p class="text-brand-dark text-sm md:text-2xl font-nunito leading-relaxed">
+                                Craft, to Mr Edemakhiota, is the disciplined application of skill. As an entrepreneur
+                                and software developer, he is committed to learning, systems, and execution. His work is
+                                defined by structure, resilience, and the ability to turn ideas into sustainable
+                                ventures.
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -323,11 +384,31 @@
                 </div>
             </div>
             <div class="flex flex-col lg:flex-row   items-center gap-6  md:gap-10 lg:gap-0 mt-6  md:mt-[30px] w-full">
-                <div class="w-full lg:w-full lg:max-w-lg ">
-                    <img class="object-cover h-full  w-full" src="./assets/eddie-halfshot.png" alt="eddie-halfshot" />
+                <div class="w-full lg:w-full lg:max-w-full image-hover-wrapper">
+                    <div class="">
+                        <!-- remove image-hover-container for images that doesnt need scaling  -->
+                        <img class="object-cover object-[50%_10%] h-[400px] rounded-3xl  w-full image-hover-effect"
+                            src="./assets/resileceoriginalmg.png" alt="eddie-halfshot" />
+                    </div>
                 </div>
-                <div class="   flex justify-center lg:max-w-56 xl:max-w-xs  w-full ">
-                    <img src="./assets/badge.png" class="object-cover justify-center items-center  " alt="badge" />
+                <div class="flex justify-center lg:max-w-56 xl:max-w-xs w-full">
+                    <div class="rotating-badge-container">
+                        <div class="rotating-text-wrapper">
+                            <svg viewBox="0 0 200 200" class="rotating-svg">
+                                <path id="badgeTextPath"
+                                    d="M 100, 100 m -85, 0 a 85,85 0 1,1 170,0 a 85,85 0 1,1 -170,0"
+                                    fill="transparent" />
+                                <text>
+                                    <textPath xlink:href="#badgeTextPath" startOffset="0%">
+                                        YEARS OF EXCELLENCE ~ YEARS OF EXCELLENCE ~
+                                    </textPath>
+                                </text>
+                            </svg>
+                        </div>
+                        <div class="badge-center">
+                            <span class="badge-number font-nunito">15</span>
+                        </div>
+                    </div>
                 </div>
                 <div class="flex flex-col xl:flex-row gap-6   w-full ">
                     <div class="lg:w-full ">
@@ -372,10 +453,19 @@
             </div>
         </div>
         <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 md:gap-6 mt-6 md:mt-[30px] w-full items-center">
-            <div class="w-full col-span-2"><img src="./assets/barber.png" alt="" srcset=""></div>
+            <div class="w-full col-span-2 image-hover-wrapper h-full">
+                <img class="image-hover-effect h-full rounded-3xl object-cover " src="./assets/barber-new.png" alt=""
+                    srcset="">
+            </div>
             <div class="flex mt-6 md:mt-0 w-full flex-col lg:col-span-1 md:col-span-2  gap-6">
-                <div class="w-full"><img class="w-full" src="./assets/hairdresser.png" alt="" srcset=""></div>
-                <div class="w-full"><img class="w-full" src="./assets/painter.png" alt="" srcset=""></div>
+                <div class="w-full image-hover-wrapper">
+                    <img class="w-full image-hover-effect max-h-[220px] sm:max-h-full rounded-3xl"
+                        src="./assets/cleaner-with-towel.png" alt="" srcset="">
+                </div>
+                <div class="w-full image-hover-wrapper">
+                    <img class="w-full image-hover-effect max-h-[220px] sm:max-h-full lg:max-h-[200px] h-full rounded-3xl"
+                        src="./assets/man-cleaning.png" alt="" srcset="">
+                </div>
             </div>
 
         </div>
@@ -400,12 +490,13 @@
             <!-- Review Slides min-h-[300px] md:min-h-[400px] -->
             <div class="relative ">
                 <!-- Slide 1 -->
-                <div class="carousel-item active absolute inset-0 transition-opacity duration-500">
+                <div class="carousel-item active transition-opacity duration-500">
                     <div class=" flex items-center gap-3 md:gap-6 lg:gap-9 w-full justify-between h-full">
-                        <div class="relative">
-                            <img class="absolute -top-4 left-0" src="./assets/content.png" alt="" srcset="">
-                            <img src="./assets/reviewimage.png"
-                                class="h-[200px] object-cover rounded-lg sm:rounded-none sm:h-auto" alt="quote icon">
+                        <div class="relative image-hover-wrapper">
+                            <img class="absolute -top-4 left-0 z-20" src="./assets/content.png" alt="" srcset="">
+                            <img src="./assets/testmonial-original.png"
+                                class="h-[200px] object-cover rounded-lg sm:rounded-none sm:h-auto image-hover-effect"
+                                alt="quote icon">
 
                         </div>
                         <div class="w-full ">
@@ -427,7 +518,7 @@
                 </div>
 
                 <!-- Slide 2 -->
-                <div class="carousel-item  absolute inset-0 transition-opacity duration-500">
+                <div class="carousel-item transition-opacity duration-500">
                     <div class=" flex items-center gap-3 md:gap-6 lg:gap-9 w-full justify-between h-full">
                         <div class="relative">
                             <img class="absolute -top-4 left-0" src="./assets/content.png" alt="" srcset="">
@@ -453,7 +544,8 @@
                     </div>
                 </div>
                 <!-- Consolidated Navigation Buttons -->
-                <div class="sm:absolute sm:right-3 sm:bottom-5 md:right-12 md:bottom-5 flex review justify-end gap-6 ">
+                <div
+                    class="sm:absolute sm:right-3 sm:bottom-5 md:right-12 md:bottom-5 flex review justify-end gap-6 z-30">
                     <button
                         class="carousel-btn prev-btn pointer-events-auto border-[#332D2B] rounded-full hover:bg-gray-100 transition-colors">
                         <svg width="30" height="25" viewBox="0 0 40 35" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -483,7 +575,8 @@
                 <div class="lg:col-span-4 flex flex-col space-y-[15px] md:space-y-8">
                     <div class="flex items-start justify-between w-full md:flex-col">
                         <div class="w-1/3 md:w-full">
-                            <img class="object-contain sm:h-[30px]" src="./assets/LOGO-02 1 copy.png" alt="logo image" />
+                            <img class="object-contain sm:h-[30px]" src="./assets/LOGO-02 1 copy.png"
+                                alt="logo image" />
                             <p
                                 class="text-white/75 pt-[14px] md:pt-6  text-xs sm:text-sm md:text-lg font-nunito leading-relaxed max-w-sm">
                                 Edwin Osagie Edemakhiota is a Nigerian entrepreneur, software developer, and business

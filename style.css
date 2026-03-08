@@ -163,7 +163,7 @@ header.header-scrolled #mobile-menu-toggle {
   position: absolute;
   opacity: 0;
   visibility: hidden;
-  transition: opacity 0.6s ease, visibility 0.6s ease;
+  transition: opacity 1s cubic-bezier(0.4, 0, 0.2, 1), visibility 1s cubic-bezier(0.4, 0, 0.2, 1);
   z-index: 10;
   filter: drop-shadow(0 20px 30px rgba(0, 0, 0, 0.1));
 }
@@ -179,6 +179,83 @@ header.header-scrolled #mobile-menu-toggle {
   object-fit: contain;
 }
 
+.fashion-image-container .carousel-img {
+  max-height: 500px;
+  object-fit: contain;
+}
+
+/* Image Hover Effects */
+.image-hover-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  cursor: pointer;
+}
+
+.image-hover-container {
+  position: relative;
+  overflow: hidden;
+  border-radius: 16px;
+  /* Matching the rounded look in screenshot */
+  /* aspect-ratio: 4/5; */
+  /* Making it look like the portrait aspect in screenshot */
+  transition: transform 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+  transform-origin: bottom;
+  will-change: transform;
+}
+
+.image-hover-effect {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* Smooth transition for color restoration */
+  transition: filter 1s ease;
+  filter: grayscale(100%) contrast(1);
+  /*or 1.1*/
+  /* Black and white by default */
+  will-change: filter;
+}
+
+.image-hover-wrapper:hover .image-hover-container {
+  transform: scaleY(1.03) translateY(-5px);
+}
+
+.image-hover-wrapper:hover .image-hover-effect {
+  filter: grayscale(0%) contrast(1) brightness(1);
+}
+
+/* Cinematic Overlay (Optional vignette look) */
+/* .image-hover-container::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle, transparent, rgba(0, 0, 0, 0.2));
+  opacity: 0;
+  transition: opacity 1s ease;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.image-hover-wrapper:hover .image-hover-container::after {
+  opacity: 1;
+} */
+
+.image-caption-below {
+  margin-top: 12px;
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 0.9rem;
+  color: #332D2B;
+  opacity: 0;
+  transform: translateY(5px);
+  transition: all 0.6s ease;
+  text-align: left;
+}
+
+.image-hover-wrapper:hover .image-caption-below {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 .horizontal-gradient-line {
   border: 1px solid;
   width: 90%;
@@ -189,6 +266,10 @@ header.header-scrolled #mobile-menu-toggle {
 
 @media (max-width: 768px) {
   .fashion-image-container .carousel-item {
+    max-height: 300px;
+  }
+
+  .fashion-image-container .carousel-img {
     max-height: 300px;
   }
 
@@ -230,5 +311,109 @@ header.header-scrolled #mobile-menu-toggle {
     height: 0px;
     border-image-source: linear-gradient(90deg, rgba(255, 255, 255, 0) -4.79%, #000000 50.34%, rgba(255, 255, 255, 0) 105.48%);
     border-image-slice: 1;
+  }
+}
+
+/* Rotating Text Badge Styles */
+.rotating-badge-container {
+  position: relative;
+  width: 220px;
+  height: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.rotating-text-wrapper {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  animation: rotateBadge 15s linear infinite;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rotating-svg {
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+}
+
+.rotating-svg text {
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 17px;
+  font-weight: 500;
+  fill: #332D2B;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+}
+
+.badge-center {
+  width: 150px;
+  height: 150px;
+  background-color: #59291D;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.badge-number {
+  color: white;
+  font-family: 'Playfair Display', serif;
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+@keyframes rotateBadge {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 768px) {
+  .rotating-badge-container {
+    width: 180px;
+    height: 180px;
+  }
+
+  .badge-center {
+    width: 120px;
+    height: 120px;
+  }
+
+  .badge-number {
+    font-size: 2.5rem;
+  }
+
+  .rotating-svg text {
+    font-size: 10px;
+  }
+ 
+}
+
+@media (max-width: 480px) {
+  .contact-img{
+   max-height: 550px !important; 
+  }
+}
+@media (max-width: 780px) {
+  .contact-img{
+   max-height: 700px !important; 
+  }
+}
+@media (max-width:1000px) {
+   .contact-img{
+   max-height: 1240px !important;
   }
 }

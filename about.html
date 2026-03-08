@@ -45,12 +45,13 @@
 <!-- min-h-screen mobile,sm:h-[120vh] min-h-[100svh] -->
 
 <body class="">
-    <div class="hero-wrapper min-h-[110vh] relative sm:h-[180vh]  w-full bg-[url('./assets/about-hero.png')]
-         bg-[center]    bg-cover md:bg-[center_top_1%] lg:bg-[center_1%] lg:h-[145vh] lg:pb-20 pb-6 sm:pb-0  ">
+    <div
+        class="hero-wrapper min-h-[110vh] bg-black/95 relative sm:min-h-[120vh]  w-full bg-[url('./assets/characterImg.png')]
+         bg-[center] bg-no-repeat bg-cover sm:bg-[center_top_80px] md:bg-[center_top_100px] lg:bg-[center_top_0px] lg:h-[145vh] lg:pb-20 pb-6 sm:pb-0  ">
         <div class="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent z-0"></div>
         <!-- <div class="hidden lg:block absolute inset-0 lg:bg-gradient-to-t lg:from-black/70 lg:via-black/50 lg:to-black/20"></div> -->
         <!-- Header / Navigation  add later backdrop-blur-md -->
-        <header id="main-header" class="fixed top-0 mb-10 w-full z-50 pt-4 transition-all duration-300">
+        <header id="main-header" class="fixed  top-0 mb-10 w-full z-50 py-4 transition-all duration-300">
             <div class="lg:max-w-[1500px] mx-auto px-4 lg:px-8 w-full  flex justify-between items-center text-white">
                 <div class="flex items-center space-x-2 pointer-events-auto cursor-pointer">
                     <img class="object-contain h-[25px] lg:h-auto" src="./assets/LOGO-02 1.png" alt="logo image" />
@@ -101,8 +102,8 @@
         </header>
         <!-- HERO SECTION -->
         <section id=""
-            class="hero relative h-[140vh] sm:h-[180vh] lg:h-[145vh] w-full  lg:pb-[52px]   max-w-4xl lg:max-w-[1500px] px-4 lg:px-8    mx-auto  flex flex-col items-end justify-end lg:flex-row lg:justify-normal lg:items-stretch">
-            <div class="flex flex-col lg:mt-40 lg:max-w-xl">
+            class="hero relative h-[140vh] sm:min-h-[120vh] lg:h-[145vh] w-full pt-40 sm:pt-48 md:pt-60 lg:pt-52 lg:pb-[52px]    max-w-4xl lg:max-w-[1500px] px-4 lg:px-8    mx-auto  flex flex-col items-end justify-end  lg:flex-row lg:justify-normal lg:gap-10 lg:items-stretch">
+            <div class="flex flex-col lg:mt-10 lg:max-w-xl">
                 <p class="text-[#E3C9AC] font-semibold text-xs md:text-2xl font-nunito">About</p>
                 <h2
                     class="text-4xl text-left  z-10 md:text-[70px] font-serif xl:text-left   leading-[1.2]  tracking-tight">
@@ -121,12 +122,13 @@
                 <div class="flex flex-col justify-start items-start lg:justify-end lg:items-end w-full ">
                     <p
                         class="text-white text-sm md:text-[22px] lg:max-w-xl  font-nunito group-hover:text-brand-gold transition-colors duration-500 leading-[1.5]">
-                        Mr Edemakhiota is a Nigerian entrepreneur, software developer, and business executive whose
-                        journey is defined by re silience, continuous learning, and visionary leadership. Widely known
-                        through the personal brand “Mr Edemakhiota,” he represents excellence, discipline, and
-                        purposeful enterprise across multiple industries.</p>
+                        Born on October 16, 1994, Edwin is the first child of five siblings. Born into the family of the
+                        late Mr. Christopher Edemakhiota and Mrs. Theresa Edemakhiota. He hails from Benin City, in Ovia
+                        North-East Local Government Area of Edo State, Nigeria. From a young age, Edwin demonstrated
+                        leadership qualities, a strong work ethic, and a deep sense of responsibility—traits shaped by
+                        family values and life experiences.</p>
                 </div>
-                <div class="lg:hidden mt-6">
+                <div class="lg:hidden mt-6 sm:mb-4">
                     <button
                         class="bg-brand-gold text-white font-nunito px-4 py-3 text-sm rounded-full flex items-center space-x-3 transition-all">
                         <a href="partner.html">Partner with me</a>
@@ -160,9 +162,11 @@
                     laid the foundation for his entrepreneurial mindset and his determination to build sustainable
                     ventures.</p>
             </div>
-            <div class="w-full">
-                <img class="object-cover xl:max-h-[500px] xl:h-fit h-full w-full rounded-3xl" src="./assets/Group 6.png"
-                    alt="youth-image" />
+            <div class="w-full image-hover-wrapper">
+                <div class="">
+                    <img class="object-cover xl:max-h-[500px] xl:h-fit h-full w-full rounded-2xl image-hover-effect"
+                        src="./assets/student-child-backpack.png" alt="youth-image" />
+                </div>
             </div>
         </div>
         <div class="w-full justify-center items-center mt-[80px] lg:mt-[100px]">
@@ -173,14 +177,17 @@
     <!-- EARLY ENTREPRENEURSHIP AND SETBACKS SECTION -->
     <section class="bg-white pt-[80px] lg:pt-[100px] lg:max-w-[1500px] px-4 lg:px-8  mx-auto w-full">
         <div class="flex flex-col-reverse lg:flex-row gap-6 xl:gap-10 items-stretch justify-between w-full">
-            <div class="w-full">
-                <img class="object-cover xl:max-h-[580px] xl:h-fit h-full w-full rounded-3xl" src="./assets/Group 7.png"
-                    alt="youth-image" />
+            <div class="w-full image-hover-wrapper">
+                <div class="">
+                    <img class="object-cover xl:max-h-[530px] xl:h-fit h-full w-full rounded-2xl image-hover-effect"
+                        src="./assets/mastercuz-original.png" alt="youth-image" /> <!--./assets/Group 7.png -->
+                </div>
+              
             </div>
             <div class=" w-full">
                 <p class="text-[22px]  md:text-[65px] font-serif leading-[1.1]  tracking-tight  text-brand-dark">Early
                     Entrepreneurship and Setbacks </p>
-                <p class="text-brand-dark text-sm  md:text-2xl font-nunito pt-6">Mr. Edemakhiota is deeply rooted in his
+                <p class="text-brand-dark text-sm  md:text-2xl font-nunito pt-6">
                     At just 16–17 years old (2010–2011), Edwin launched his first business venture, marking the
                     beginning of his entrepreneurial journey. Driven by passion and ambition, he opened a salon
                     business, gaining early exposure to customer service, business operations, and financial
@@ -211,12 +218,15 @@
                 </p>
                 <p class="text-brand-dark text-sm  md:text-2xl font-nunito pt-6">Building on this experience, Edwin took
                     a decisive entrepreneurial leap. In November 2016, he opened his own betting shop and became one of
-                    the stakeholders in the business. This milestone marked a successful comeback and reinforced his
+                    the stakeholders in the business. This m ilestone marked a successful comeback and reinforced his
                     reputation as a determined and adaptable entrepreneur.</p>
             </div>
-            <div class="w-full">
-                <img class="object-cover xl:max-h-[700px] xl:h-fit h-full w-full rounded-3xl" src="./assets/Group 8.png"
-                    alt="gadget" />
+            <div class="w-full image-hover-wrapper">
+                <div class="">
+                    <img class="object-cover xl:max-h-[700px] xl:h-fit h-full w-full rounded-[20px] image-hover-effect"
+                        src="./assets/gadgets-original.png" alt="gadget" /> <!-- ./assets/Group 8.png -->
+                </div>
+               
             </div>
         </div>
         <div class="w-full justify-center items-center mt-[80px] lg:mt-[100px]">
@@ -228,8 +238,8 @@
     <!-- BARBER SECTION  -->
     <section class="bg-white pt-[80px] lg:pt-[100px] lg:max-w-[1500px]  px-4 lg:px-8 mx-auto w-full">
         <div class="flex flex-col-reverse lg:flex-row gap-6 xl:gap-10 items-stretch justify-between w-full">
-            <div class="w-full">
-                <img class="object-cover xl:max-h-[570px] xl:h-fit h-full w-full rounded-3xl" src="./assets/Group 9.png"
+            <div class="w-full image-hover-wrapper">
+                <img class="object-cover xl:max-h-[560px] xl:h-fit h-full w-full rounded-[20px] image-hover-effect" src="./assets/young-african-american-man-visiting-barbershop.jpg.jpeg"
                     alt="barber-image" />
             </div>
             <div class=" w-full">
@@ -266,9 +276,9 @@
                     and professionally managed laundry and cleaning solutions. The brand operates under the same values
                     of quality, consistency, and customer satisfaction that define the Mastercutz ecosystem.</p>
             </div>
-            <div class="w-full">
-                <img class="object-cover xl:max-h-[710px] xl:h-fit h-full w-full rounded-3xl"
-                    src="./assets/Group 10 (1).png" alt="painter" />
+            <div class="w-full image-hover-wrapper">
+                <img class="object-cover xl:max-h-[710px] xl:h-full h-full w-full rounded-[20px] image-hover-effect"
+                    src="./assets/man-cleaning.png" alt="painter" />
             </div>
         </div>
         <div class="w-full justify-center items-center mt-[80px] lg:mt-[100px]">
@@ -279,9 +289,9 @@
     <!-- EMPIRE SECTION  -->
     <section class="bg-white pt-[80px] lg:pt-[100px] lg:max-w-[1500px]  px-4 lg:px-8 mx-auto w-full">
         <div class="flex flex-col-reverse  lg:flex-row gap-6 xl:gap-10 items-stretch justify-between w-full">
-            <div class="w-full">
-                <img class="object-cover xl:max-h-[590px] xl:h-fit h-full w-full rounded-3xl"
-                    src="./assets/Group 10 (1).png" alt="barber-image" />
+            <div class="w-full image-hover-wrapper">
+                <img class="object-cover xl:max-h-[590px] xl:h-full h-full w-full rounded-[20px] image-hover-effect"
+                    src="./assets/man-cleaning.png" alt="cleaner-image" />
             </div>
             <div class=" w-full">
                 <p class="text-[22px]  md:text-[65px] font-serif leading-[1.1]  tracking-tight  text-brand-dark">
@@ -320,9 +330,9 @@
                     that structure precedes scale. Systems create freedom. Discipline compounds and growth with
                     foundation is temporary.</p>
             </div>
-            <div class="w-full">
-                <img class="object-cover xl:max-h-[480px] xl:h-fit h-full w-full rounded-3xl"
-                    src="./assets/Group 11.png" alt="painter" />
+            <div class="w-full image-hover-wrapper">
+                <img class="object-cover  xl:max-h-[480px] xl:h-fit h-full w-full rounded-3xl image-hover-effect"
+                    src="./assets/eddy-royal image 2.png" alt="painter" />
             </div>
         </div>
         <div class="w-full justify-center items-center mt-[80px] lg:mt-[100px]">
@@ -341,7 +351,8 @@
                 <div class="lg:col-span-4 flex flex-col space-y-[15px] md:space-y-8">
                     <div class="flex items-start justify-between w-full md:flex-col">
                         <div class="w-1/3 md:w-full">
-                            <img class="object-contain sm:h-[30px]" src="./assets/LOGO-02 1 copy.png" alt="logo image" />
+                            <img class="object-contain sm:h-[30px]" src="./assets/LOGO-02 1 copy.png"
+                                alt="logo image" />
                             <p
                                 class="text-white/75 pt-[14px] md:pt-6  text-xs sm:text-sm md:text-lg font-nunito leading-relaxed max-w-sm">
                                 Edwin Osagie Edemakhiota is a Nigerian entrepreneur, software developer, and business
